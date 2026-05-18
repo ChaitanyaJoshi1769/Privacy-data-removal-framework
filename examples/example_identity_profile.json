@@ -1,0 +1,19 @@
+{
+  "name": "Chaitanya Joshi",
+  "email": "chaitanyajoshi15@gmail.com",
+  "phone": "+1-XXX-XXX-XXXX",
+  "github_username": "ChaitanyaJoshi1769",
+  "domain": "gmail.com",
+  "created_at": "2026-05-18T13:00:00",
+  "last_updated": "2026-05-18T13:00:00",
+  "accounts": [
+    {
+      "platform": "github",
+      "username": "ChaitanyaJoshi1769",
+      "url": "https://github.com/ChaitanyaJoshi1769",
+      "public": true,
+      "indexed": true
+    }
+  ],
+  "notes": "Primary identity profile for privacy remediation"
+}
