@@ -1,0 +1,82 @@
+{
+  "plan_id": "removal_001",
+  "timestamp": "2026-05-18T08:03:10.615113",
+  "created_for": "Chaitanya Joshi (chaitanyajoshi15@gmail.com)",
+  "operations": {
+    "op_001": {
+      "operation_id": "op_001",
+      "exposure_id": "exp_001",
+      "type": "github_public_profile",
+      "title": "Secure GitHub Profile",
+      "priority": 1,
+      "status": "pending",
+      "estimated_completion": "2026-05-19T08:03:10.615391",
+      "estimated_hours": 1,
+      "steps": 4,
+      "approval_gate": true,
+      "reversible": true
+    },
+    "op_002": {
+      "operation_id": "op_002",
+      "exposure_id": "exp_004",
+      "type": "breach_check",
+      "title": "Check for Data Breaches",
+      "priority": 2,
+      "status": "pending",
+      "estimated_completion": "2026-05-19T08:03:10.615394",
+      "estimated_hours": 1.5,
+      "steps": 4,
+      "approval_gate": true,
+      "reversible": true
+    },
+    "op_003": {
+      "operation_id": "op_003",
+      "exposure_id": "exp_005",
+      "type": "data_broker_removal",
+      "title": "Data Broker Opt-outs (9 major brokers)",
+      "priority": 3,
+      "status": "pending",
+      "estimated_completion": "2026-06-01T08:03:10.615395",
+      "estimated_hours": 12,
+      "brokers": 9,
+      "approval_gate": true,
+      "reversible": true
+    },
+    "op_004": {
+      "operation_id": "op_004",
+      "exposure_id": "exp_002",
+      "type": "search_engine_removal",
+      "title": "Search Engine De-indexing",
+      "priority": 4,
+      "status": "pending",
+      "estimated_completion": "2026-06-08T08:03:10.615397",
+      "estimated_hours": 2,
+      "steps": 3,
+      "approval_gate": true,
+      "reversible": true
+    },
+    "op_005": {
+      "operation_id": "op_005",
+      "exposure_id": "exp_003",
+      "type": "wayback_machine_removal",
+      "title": "Internet Archive Removal",
+      "priority": 5,
+      "status": "pending",
+      "estimated_completion": "2026-06-15T08:03:10.615398",
+      "estimated_hours": 1,
+      "steps": 2,
+      "approval_gate": true,
+      "reversible": true
+    }
+  },
+  "summary": {
+    "total_operations": 5,
+    "phase_1_immediate": 3,
+    "phase_2_short_term": 1,
+    "phase_3_ongoing": 1,
+    "total_estimated_hours": 29.5,
+    "timeline_days": 28,
+    "all_lawful": true,
+    "all_reversible": true
+  }
+}

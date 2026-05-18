@@ -1,0 +1,62 @@
+{
+  "plan_id": "deindex_001",
+  "generated": "2026-05-18T08:03:46.432585",
+  "subject": "Chaitanya Joshi",
+  "deindex_strategy": {
+    "phase": 5,
+    "timeline_days": 21,
+    "target_urls": [
+      "github.com/ChaitanyaJoshi1769 (search results)",
+      "Any indexed developer profiles",
+      "Archived snapshots with exposure"
+    ],
+    "removal_methods": [
+      "Google Search Console URL removal",
+      "Bing Webmaster Tools removal",
+      "DuckDuckGo DMCA requests",
+      "Cache purging requests"
+    ]
+  },
+  "content_dilution": {
+    "strategy": "Build positive professional presence to displace negative/sensitive results",
+    "timeline_weeks": 12,
+    "components": [
+      {
+        "component": "Professional presence strengthening",
+        "actions": [
+          "Complete LinkedIn profile",
+          "Create professional personal website",
+          "Contribute to open-source projects"
+        ],
+        "effort_hours": 5
+      },
+      {
+        "component": "Positive content creation",
+        "actions": [
+          "Technical blog posts",
+          "Conference/speaking bio",
+          "Professional social profiles"
+        ],
+        "effort_hours": 10
+      },
+      {
+        "component": "Backlink building",
+        "actions": [
+          "Contribute to reputable tech publications",
+          "Speaking engagements",
+          "Professional directories"
+        ],
+        "effort_hours": 8
+      }
+    ],
+    "expected_outcome": "Positive results dominate search results within 3-6 months"
+  },
+  "monitoring": {
+    "frequency": "Weekly",
+    "metrics": [
+      "Search result position for key terms",
+      "Negative result visibility",
+      "Brand search results quality"
+    ]
+  }
+}

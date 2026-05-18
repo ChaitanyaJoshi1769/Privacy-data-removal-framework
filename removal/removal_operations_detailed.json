@@ -1,0 +1,161 @@
+{
+  "generated": "2026-05-18T08:03:10.615624",
+  "operations": [
+    {
+      "id": "op_001",
+      "title": "GitHub Profile Security Audit",
+      "priority": "IMMEDIATE",
+      "steps": [
+        {
+          "num": 1,
+          "action": "Go to https://github.com/settings/profile",
+          "time": "2 min"
+        },
+        {
+          "num": 2,
+          "action": "Review profile privacy settings",
+          "time": "3 min"
+        },
+        {
+          "num": 3,
+          "action": "Audit repositories for sensitive data",
+          "time": "10 min"
+        },
+        {
+          "num": 4,
+          "action": "Make private/delete sensitive repos if needed",
+          "time": "varies"
+        }
+      ],
+      "total_time": "15-30 minutes",
+      "reversible": true
+    },
+    {
+      "id": "op_002",
+      "title": "Breach Detection Check",
+      "priority": "IMMEDIATE",
+      "steps": [
+        {
+          "num": 1,
+          "action": "Visit https://haveibeenpwned.com/",
+          "time": "1 min"
+        },
+        {
+          "num": 2,
+          "action": "Search email: chaitanyajoshi15@gmail.com",
+          "time": "2 min"
+        },
+        {
+          "num": 3,
+          "action": "Sign up for breach alerts at HIBP",
+          "time": "3 min"
+        },
+        {
+          "num": 4,
+          "action": "If breaches found, change passwords on affected services",
+          "time": "varies"
+        }
+      ],
+      "total_time": "10-30 minutes",
+      "reversible": true
+    },
+    {
+      "id": "op_003",
+      "title": "Data Broker Removal Campaign",
+      "priority": "IMMEDIATE + ONGOING",
+      "brokers": [
+        {
+          "name": "Spokeo",
+          "url": "spokeo.com",
+          "removal_method": "opt-out form"
+        },
+        {
+          "name": "WhitePages",
+          "url": "whitepages.com",
+          "removal_method": "privacy form"
+        },
+        {
+          "name": "Intelius",
+          "url": "intelius.com",
+          "removal_method": "automated removal"
+        },
+        {
+          "name": "MyLife",
+          "url": "mylife.com",
+          "removal_method": "opt-out form"
+        },
+        {
+          "name": "TrueCaller",
+          "url": "truecaller.com",
+          "removal_method": "app/web removal"
+        },
+        {
+          "name": "PeopleFinder",
+          "url": "peoplefinder.com",
+          "removal_method": "contact form"
+        },
+        {
+          "name": "USSearch",
+          "url": "ussearch.com",
+          "removal_method": "opt-out"
+        },
+        {
+          "name": "Family Tree Now",
+          "url": "familytreenow.com",
+          "removal_method": "removal request"
+        },
+        {
+          "name": "ZoomInfo",
+          "url": "zoominfo.com",
+          "removal_method": "privacy form"
+        }
+      ],
+      "time_per_broker": "5-15 minutes",
+      "total_time": "2-3 hours",
+      "reversible": true
+    },
+    {
+      "id": "op_004",
+      "title": "Search Engine De-indexing",
+      "priority": "SHORT-TERM (Week 2-3)",
+      "steps": [
+        {
+          "num": 1,
+          "action": "Go to Google Search Console: https://search.google.com/search-console/remove-results",
+          "time": "15 min"
+        },
+        {
+          "num": 2,
+          "action": "Submit URLs for removal from Google index",
+          "time": "15 min"
+        },
+        {
+          "num": 3,
+          "action": "Request removal in Bing Webmaster Tools",
+          "time": "15 min"
+        }
+      ],
+      "total_time": "45 minutes + 1-2 weeks for processing",
+      "reversible": true
+    },
+    {
+      "id": "op_005",
+      "title": "Internet Archive Removal",
+      "priority": "ONGOING",
+      "steps": [
+        {
+          "num": 1,
+          "action": "Request exclusion via https://archive.org/about/exclude.php",
+          "time": "10 min"
+        },
+        {
+          "num": 2,
+          "action": "Contact Archive.org for manual removal of sensitive snapshots",
+          "time": "15 min"
+        }
+      ],
+      "total_time": "25 minutes + 1-4 weeks processing",
+      "reversible": true
+    }
+  ]
+}

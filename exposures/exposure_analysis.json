@@ -1,0 +1,154 @@
+{
+  "analysis_id": "analysis_001",
+  "timestamp": "2026-05-18T08:02:31.681610",
+  "total_exposures": 5,
+  "exposures_by_severity": {
+    "CRITICAL": 0,
+    "HIGH": 2,
+    "MEDIUM": 3,
+    "LOW": 0
+  },
+  "phase_assignments": {
+    "1": {
+      "name": "Immediate (Week 1)",
+      "exposures": [
+        "exp_004",
+        "exp_001",
+        "exp_005"
+      ]
+    },
+    "2": {
+      "name": "Short-term (Week 2-3)",
+      "exposures": [
+        "exp_002"
+      ]
+    },
+    "3": {
+      "name": "Ongoing",
+      "exposures": [
+        "exp_003"
+      ]
+    }
+  },
+  "exposures": [
+    {
+      "exposure_id": "exp_004",
+      "type": "email_in_breaches",
+      "platform": "Data breaches (potential)",
+      "description": "Email potentially exposed in data breaches",
+      "data_exposed": [
+        "Email address",
+        "Associated passwords"
+      ],
+      "visibility": "POSSIBLY_EXPOSED",
+      "removal_difficulty": "VERY_HARD",
+      "risk_score": 50.4,
+      "severity": "HIGH",
+      "removal_options": [
+        "1. Check Have I Been Pwned",
+        "2. Monitor credit bureaus",
+        "3. Set up breach alerts",
+        "4. Change passwords on all services"
+      ],
+      "estimated_time": "Ongoing monitoring",
+      "phase": 1
+    },
+    {
+      "exposure_id": "exp_003",
+      "type": "wayback_machine",
+      "platform": "Internet Archive",
+      "description": "Historical snapshots of GitHub profile",
+      "data_exposed": [
+        "Historical profile data",
+        "Deleted information"
+      ],
+      "visibility": "PUBLIC",
+      "removal_difficulty": "HARD",
+      "risk_score": 47.5,
+      "severity": "MEDIUM",
+      "removal_options": [
+        "1. Request exclusion from Archive.org crawling (robots.txt)",
+        "2. Submit DMCA notice if content is copyrighted",
+        "3. Contact Archive.org directly for removal"
+      ],
+      "estimated_time": "2-4 weeks",
+      "phase": 3
+    },
+    {
+      "exposure_id": "exp_002",
+      "type": "search_engine_indexing",
+      "platform": "Google/Bing/DuckDuckGo",
+      "description": "Profile indexed in search engines",
+      "data_exposed": [
+        "Name",
+        "GitHub profile",
+        "Associated links"
+      ],
+      "visibility": "INDEXED",
+      "removal_difficulty": "MEDIUM",
+      "risk_score": 41.25,
+      "severity": "MEDIUM",
+      "removal_options": [
+        "1. Request URL removal from Google Search Console",
+        "2. Submit removal request to Bing Webmaster",
+        "3. Use robots.txt on source domains"
+      ],
+      "estimated_time": "1-2 weeks",
+      "phase": 2
+    },
+    {
+      "exposure_id": "exp_001",
+      "type": "github_public_profile",
+      "platform": "GitHub",
+      "description": "Public GitHub profile with repositories",
+      "data_exposed": [
+        "Name",
+        "Email (in commits)",
+        "Code",
+        "Activity"
+      ],
+      "visibility": "INDEXED",
+      "removal_difficulty": "EASY",
+      "risk_score": 22.5,
+      "severity": "MEDIUM",
+      "removal_options": [
+        "1. Make profile private",
+        "2. Remove sensitive repositories",
+        "3. Scrub commit history",
+        "4. Request GitHub removal (DMCA if needed)"
+      ],
+      "estimated_time": "15 minutes",
+      "phase": 1
+    },
+    {
+      "exposure_id": "exp_005",
+      "type": "data_broker_listings",
+      "platform": "Spokeo, Whitepages, Intelius, MyLife, etc.",
+      "description": "Potential listings on 9+ data brokers",
+      "data_exposed": [
+        "Name",
+        "Email",
+        "Phone (if collected)",
+        "Address (if known)"
+      ],
+      "visibility": "NOT_CHECKED",
+      "removal_difficulty": "MEDIUM",
+      "risk_score": 9.0,
+      "severity": "HIGH",
+      "removal_options": [
+        "1. Search each broker for your profile",
+        "2. Submit opt-out/removal requests",
+        "3. File CCPA/GDPR requests if applicable",
+        "4. Request annual re-scans"
+      ],
+      "estimated_time": "2-4 hours per broker",
+      "phase": 1
+    }
+  ],
+  "remediation_timeline": {
+    "phase_1_duration": "1 week (immediately actionable)",
+    "phase_2_duration": "2-3 weeks (removal requests)",
+    "phase_3_duration": "ongoing (monitoring & maintenance)"
+  },
+  "total_estimated_time": "40-60 hours of active remediation"
+}

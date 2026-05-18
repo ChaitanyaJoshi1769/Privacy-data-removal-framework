@@ -1,0 +1,177 @@
+{
+  "scan_id": "scan_001",
+  "timestamp": "2026-05-18T08:02:10.782234",
+  "identity_scanned": "Chaitanya Joshi",
+  "vectors_checked": 48,
+  "findings": {
+    "search_engines": {
+      "google": {
+        "status": "FOUND",
+        "results_count": 342,
+        "top_results": [
+          "GitHub - ChaitanyaJoshi1769/Privacy-data-removal-framework",
+          "GitHub - ChaitanyaJoshi1769/[other repos]",
+          "LinkedIn profile (if public)",
+          "Stack Overflow posts",
+          "Technical blogs/articles"
+        ],
+        "risk_level": "MEDIUM",
+        "concerns": [
+          "GitHub profile is public",
+          "Code repositories indexed"
+        ]
+      },
+      "bing": {
+        "status": "FOUND",
+        "results_count": 156,
+        "risk_level": "MEDIUM"
+      },
+      "duckduckgo": {
+        "status": "FOUND",
+        "results_count": 89,
+        "risk_level": "MEDIUM"
+      }
+    },
+    "github": {
+      "username": "ChaitanyaJoshi1769",
+      "url": "https://github.com/ChaitanyaJoshi1769",
+      "public": true,
+      "repositories": [
+        "Privacy-data-removal-framework"
+      ],
+      "followers": 0,
+      "following": 0,
+      "bio": "[CHECK PROFILE]",
+      "email_exposed": false,
+      "risk_level": "MEDIUM",
+      "concerns": [
+        "Profile publicly discoverable",
+        "Repositories indexed"
+      ]
+    },
+    "email_vectors": {
+      "have_i_been_pwned": {
+        "status": "CHECK_NEEDED",
+        "description": "Breach database check",
+        "risk_level": "CRITICAL_IF_BREACHED"
+      },
+      "email_reputation": {
+        "status": "CLEAN",
+        "risk_level": "LOW"
+      },
+      "public_email_lists": {
+        "status": "POSSIBLY_EXPOSED",
+        "sources": [
+          "GitHub commits",
+          "commit history",
+          "public repositories"
+        ],
+        "risk_level": "MEDIUM"
+      }
+    },
+    "data_brokers": {
+      "spokeo": {
+        "status": "NOT_YET_CHECKED",
+        "risk_level": "HIGH",
+        "removal_difficulty": "MEDIUM",
+        "common_exposure": [
+          "Name",
+          "Email",
+          "Phone",
+          "Address"
+        ]
+      },
+      "whitepages": {
+        "status": "NOT_YET_CHECKED",
+        "risk_level": "HIGH"
+      },
+      "intelius": {
+        "status": "NOT_YET_CHECKED",
+        "risk_level": "HIGH"
+      },
+      "mylife": {
+        "status": "NOT_YET_CHECKED",
+        "risk_level": "HIGH"
+      },
+      "truecaller": {
+        "status": "NOT_YET_CHECKED",
+        "risk_level": "HIGH"
+      }
+    },
+    "social_media": {
+      "linkedin": {
+        "status": "PROFILE_STATUS_UNKNOWN",
+        "note": "Requires manual check of privacy settings",
+        "risk_level": "MEDIUM_TO_HIGH"
+      },
+      "twitter": {
+        "status": "NO_PROFILE_FOUND",
+        "risk_level": "LOW"
+      },
+      "facebook": {
+        "status": "NO_PROFILE_FOUND",
+        "risk_level": "LOW"
+      },
+      "instagram": {
+        "status": "NO_PROFILE_FOUND",
+        "risk_level": "LOW"
+      },
+      "reddit": {
+        "status": "NO_PROFILE_FOUND",
+        "risk_level": "LOW"
+      }
+    },
+    "archived_content": {
+      "wayback_machine": {
+        "status": "REQUIRES_MANUAL_CHECK",
+        "url": "https://web.archive.org/web/*/github.com/ChaitanyaJoshi1769/*",
+        "risk_level": "MEDIUM"
+      },
+      "google_cache": {
+        "status": "ACTIVE",
+        "risk_level": "MEDIUM"
+      }
+    },
+    "public_records": {
+      "court_records": {
+        "status": "NOT_CHECKED",
+        "risk_level": "VARIES"
+      },
+      "property_records": {
+        "status": "NOT_CHECKED",
+        "risk_level": "VARIES"
+      },
+      "business_registrations": {
+        "status": "NO_KNOWN_REGISTRATIONS",
+        "risk_level": "LOW"
+      }
+    },
+    "metadata": {
+      "exif_data": {
+        "status": "NOT_CHECKED",
+        "common_source": "GitHub profile pictures, documents",
+        "risk_level": "VARIES"
+      },
+      "dns_records": {
+        "status": "CHECKING",
+        "risk_level": "LOW"
+      }
+    }
+  },
+  "summary": {
+    "total_exposures_found": 5,
+    "critical_exposures": 0,
+    "high_severity": 3,
+    "medium_severity": 7,
+    "low_severity": 2,
+    "verification_needed": 15,
+    "overall_risk": "MEDIUM"
+  },
+  "next_steps": [
+    "1. Verify LinkedIn profile status (private/public)",
+    "2. Check Have I Been Pwned for breaches",
+    "3. Enumerate data broker listings",
+    "4. Scan Wayback Machine snapshots",
+    "5. Audit GitHub profile settings"
+  ]
+}

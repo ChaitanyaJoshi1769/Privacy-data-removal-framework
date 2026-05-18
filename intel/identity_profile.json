@@ -1,0 +1,85 @@
+{
+  "profile_id": "profile_001",
+  "created_at": "2026-05-18T08:01:10.712320",
+  "status": "active",
+  "personal_identifiers": {
+    "legal_name": "Chaitanya Joshi",
+    "previous_names": [],
+    "common_nicknames": [
+      "Chaitanya"
+    ],
+    "professional_aliases": [],
+    "gamer_handles": [],
+    "family_names": []
+  },
+  "contact_information": {
+    "primary_email": "chaitanyajoshi15@gmail.com",
+    "secondary_emails": [],
+    "email_variations": [
+      "chaitanya.joshi@",
+      "c.joshi@"
+    ],
+    "phone_numbers": [],
+    "username_patterns": [
+      "chaitanya",
+      "chaitanyajoshi",
+      "cjoshi"
+    ]
+  },
+  "location_history": {
+    "current_address": "[TO BE FILLED]",
+    "previous_addresses": [],
+    "cities_lived": [],
+    "countries": [
+      "United States"
+    ],
+    "states": []
+  },
+  "professional_history": {
+    "current_employer": "[TO BE FILLED]",
+    "current_title": "[TO BE FILLED]",
+    "previous_employers": [],
+    "education": []
+  },
+  "online_presence": {
+    "github": {
+      "username": "ChaitanyaJoshi1769",
+      "url": "https://github.com/ChaitanyaJoshi1769",
+      "public": true
+    },
+    "social_platforms": {
+      "linkedin": "[TO BE FILLED]",
+      "twitter": "[TO BE FILLED]",
+      "facebook": "[TO BE FILLED]",
+      "instagram": "[TO BE FILLED]",
+      "reddit": "[TO BE FILLED]",
+      "other": []
+    }
+  },
+  "digital_assets": {
+    "owned_domains": [],
+    "websites": [],
+    "repositories": [
+      "Privacy-data-removal-framework"
+    ],
+    "cryptocurrency_addresses": []
+  },
+  "known_exposures": {
+    "breaches": [],
+    "leaks": [],
+    "public_records": [],
+    "legal_records": []
+  },
+  "preferences": {
+    "priority_concern": "comprehensive",
+    "speed_vs_thoroughness": "thoroughness",
+    "include_family": false,
+    "removal_scope": "aggressive"
+  },
+  "metadata": {
+    "intake_mode": "automated",
+    "completeness": 0.35,
+    "needs_review": true,
+    "notes": "Initial profile created. Please review and fill in missing sections."
+  }
+}

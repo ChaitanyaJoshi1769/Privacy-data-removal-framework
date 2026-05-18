@@ -1,0 +1,115 @@
+{
+  "config_id": "monitor_001",
+  "generated": "2026-05-18T08:03:46.434518",
+  "automated_jobs": [
+    {
+      "job_id": 1,
+      "name": "Daily Breach Check",
+      "frequency": "daily",
+      "service": "Have I Been Pwned API",
+      "query": "chaitanyajoshi15@gmail.com",
+      "alert_threshold": "new_breach_detected",
+      "action": "Email notification + manual review"
+    },
+    {
+      "job_id": 2,
+      "name": "Search Monitoring",
+      "frequency": "daily",
+      "service": "Google Alerts + custom script",
+      "queries": [
+        "Chaitanya Joshi",
+        "chaitanyajoshi15",
+        "ChaitanyaJoshi1769"
+      ],
+      "alert_threshold": "new_negative_results",
+      "action": "Review and flag for suppression"
+    },
+    {
+      "job_id": 3,
+      "name": "Data Broker Re-scan",
+      "frequency": "weekly",
+      "service": "Custom Python scanner",
+      "targets": 9,
+      "alert_threshold": "reappearance_after_removal",
+      "action": "Resubmit removal requests"
+    },
+    {
+      "job_id": 4,
+      "name": "Dark Web Scan",
+      "frequency": "weekly",
+      "service": "Breach monitoring services",
+      "alert_threshold": "mention_detected",
+      "action": "Immediate notification"
+    },
+    {
+      "job_id": 5,
+      "name": "Credit Monitoring",
+      "frequency": "monthly",
+      "service": "AnnualCreditReport.com",
+      "alert_threshold": "unusual_activity",
+      "action": "Fraud alert / freeze credit"
+    },
+    {
+      "job_id": 6,
+      "name": "Social Media Audit",
+      "frequency": "monthly",
+      "service": "Manual review",
+      "checks": [
+        "Profile changes",
+        "Unauthorized posts",
+        "New followers"
+      ],
+      "action": "Verify and secure"
+    },
+    {
+      "job_id": 7,
+      "name": "Archive.org Scan",
+      "frequency": "monthly",
+      "service": "Wayback Machine API",
+      "alert_threshold": "new_snapshots_of_target_urls",
+      "action": "Request removal"
+    }
+  ],
+  "alert_rules": [
+    {
+      "severity": "CRITICAL",
+      "response_time_minutes": 5,
+      "actions": [
+        "Email",
+        "SMS"
+      ]
+    },
+    {
+      "severity": "HIGH",
+      "response_time_minutes": 15,
+      "actions": [
+        "Email",
+        "Manual review"
+      ]
+    },
+    {
+      "severity": "MEDIUM",
+      "response_time_minutes": 60,
+      "actions": [
+        "Email digest"
+      ]
+    },
+    {
+      "severity": "LOW",
+      "response_time_minutes": 1440,
+      "actions": [
+        "Weekly report"
+      ]
+    }
+  ],
+  "dashboard": {
+    "refresh_interval": "5 minutes",
+    "widgets": [
+      "Breach alert status",
+      "Search result positions",
+      "Data broker reappearances",
+      "Removal progress (percentage)",
+      "Last scan timestamps"
+    ]
+  }
+}
