@@ -1,0 +1,82 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "footprint-ops"
+version = "0.1.0"
+description = "Digital footprint remediation and privacy minimization toolkit"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "Privacy Operations"}]
+keywords = ["privacy", "osint", "footprint", "data-removal", "anonymity"]
+
+dependencies = [
+    "playwright>=1.40.0",
+    "beautifulsoup4>=4.12.0",
+    "scrapy>=2.11.0",
+    "requests>=2.31.0",
+    "httpx>=0.25.0",
+    "click>=8.1.0",
+    "pydantic>=2.5.0",
+    "pydantic-settings>=2.1.0",
+    "sqlalchemy>=2.0.0",
+    "alembic>=1.12.0",
+    "psycopg2-binary>=2.9.0",
+    "networkx>=3.2.0",
+    "pandas>=2.1.0",
+    "pillow>=10.1.0",
+    "pytesseract>=0.3.10",
+    "ocrmypdf>=14.10.0",
+    "cryptography>=41.0.0",
+    "python-dotenv>=1.0.0",
+    "pyyaml>=6.0.0",
+    "pydantic-yaml>=0.11.0",
+    "structlog>=23.2.0",
+    "aiofiles>=23.2.0",
+    "tqdm>=4.66.0",
+    "selenium>=4.15.0",
+    "webdriver-manager>=4.0.0",
+    "python-dateutil>=2.8.0",
+    "pytz>=2023.3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.21.0",
+    "pytest-cov>=4.1.0",
+    "black>=23.11.0",
+    "ruff>=0.1.0",
+    "mypy>=1.7.0",
+    "ipython>=8.16.0",
+]
+
+[project.urls]
+Repository = "https://github.com/user/footprint-ops"
+Documentation = "https://github.com/user/footprint-ops/wiki"
+Issues = "https://github.com/user/footprint-ops/issues"
+
+[tool.setuptools]
+packages = ["footprint_ops", "footprint_ops.discovery", "footprint_ops.removal", "footprint_ops.automation"]
+
+[tool.setuptools.package-data]
+footprint_ops = ["templates/*", "config/*", "queries/*"]
+
+[tool.black]
+line-length = 100
+target-version = ['py311']
+include = '\.pyi?$'
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+select = ["E", "F", "W", "I", "N"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true

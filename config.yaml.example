@@ -1,0 +1,355 @@
+# Footprint Ops - Operational Configuration
+# 
+# This file contains encrypted operational settings.
+# Sensitive values are encrypted with Fernet.
+# Copy to config.yaml and customize for your environment.
+
+operational:
+  mode: "remediation"  # remediation, monitoring, maintenance
+  log_level: "INFO"
+  debug: false
+  
+database:
+  type: "sqlite"  # sqlite, postgres
+  url: "sqlite:///./footprint_ops.db"
+  # For PostgreSQL:
+  # type: "postgres"
+  # url: "postgresql://user:password@localhost/footprint_ops"
+  echo_sql: false
+  backup_enabled: true
+  backup_frequency: "daily"
+
+security:
+  encryption_enabled: true
+  encryption_key: null  # Set from environment: ENCRYPTION_KEY
+  max_retry_attempts: 3
+  timeout_seconds: 30
+
+identity:
+  # Your primary identity information
+  # Encrypted in database - not stored here in plaintext
+  storage_mode: "encrypted_db"
+  backup_frequency: "daily"
+  
+discovery:
+  enabled: true
+  parallel_workers: 4
+  rate_limit_delay: 2  # seconds between requests
+  timeout: 30
+  retry_attempts: 3
+  cache_results: true
+  cache_duration: 7  # days
+  
+  # Search engines
+  search_engines:
+    - google
+    - bing
+    - duckduckgo
+    - yandex
+    - archive
+  
+  # Data sources
+  targets:
+    search_engines:
+      enabled: true
+      depth: 5  # pages to search
+    
+    data_brokers:
+      enabled: true
+      platforms:
+        - whitepages
+        - spokeo
+        - intelius
+        - mylife
+        - peoplesearch
+        - familytreenow
+        - truthfinder
+        - fastpeoplesearch
+        - ussearch
+        - zoominfo
+    
+    social_media:
+      enabled: true
+      platforms:
+        - linkedin
+        - twitter
+        - facebook
+        - instagram
+        - reddit
+        - github
+        - stackoverflow
+        - medium
+        - youtube
+        - twitch
+        - tiktok
+    
+    archives:
+      enabled: true
+      services:
+        - wayback_machine
+        - google_cache
+        - bing_cache
+    
+    metadata:
+      enabled: true
+      extract_exif: true
+      extract_pdf_metadata: true
+      reverse_image_search: true
+    
+    public_records:
+      enabled: true
+      sources:
+        - whois_historic
+        - business_registrations
+        - property_records  # if publicly accessible
+  
+  browsers:
+    headless: true
+    timeout_ms: 30000
+    user_agent_rotation: true
+    fingerprint_spoofing: true
+
+removal:
+  enabled: true
+  require_approval: true
+  dry_run_first: true
+  batch_size: 5
+  concurrent_operations: 2
+  
+  # Operation types
+  operations:
+    account_deletion:
+      enabled: true
+      require_manual_verification: true
+    
+    data_broker_optout:
+      enabled: true
+      auto_submit: true  # Via Selenium automation
+      batch_mode: true
+      
+    privacy_requests:
+      enabled: true
+      types:
+        - ccpa  # California Consumer Privacy Act
+        - gdpr  # EU General Data Protection Regulation
+        - dpia  # Data Protection Impact Assessment
+      auto_send: false  # Require manual review
+    
+    search_engine_removal:
+      enabled: true
+      # Google Search Console API required
+      google_removal: true
+      bing_removal: true
+      url_removal: true
+      cache_removal: true
+    
+    content_replacement:
+      enabled: true
+      replacement_type: "blank"  # blank, redirect, placeholder
+    
+    platform_takedown:
+      enabled: true
+      dmca_reporting: false  # Legal escalation
+  
+  tracking:
+    store_evidence: true
+    store_screenshots: true
+    maintain_audit_trail: true
+    email_confirmations: true
+
+deindex:
+  enabled: true
+  strategies:
+    - url_removal
+    - cache_removal
+    - snippet_suppression
+    - negative_seo
+  
+  search_engines:
+    - google
+    - bing
+  
+  dilution:
+    enabled: true
+    create_positive_profiles: true
+    platforms:
+      - github
+      - linkedin
+      - medium
+      - stackoverflow
+    content_volume: "moderate"  # light, moderate, high
+
+monitoring:
+  enabled: true
+  continuous: true
+  
+  frequency:
+    search_engines: "weekly"
+    data_brokers: "weekly"
+    breaches: "daily"
+    social_media: "weekly"
+    metadata: "monthly"
+  
+  alerts:
+    enabled: true
+    email: false
+    email_address: null  # Set in .env
+    notification_threshold: "any_change"  # any_change, reappearance, critical_only
+  
+  storage:
+    save_results: true
+    retention_days: 90
+    archive_snapshots: true
+
+privacy_hardening:
+  enabled: true
+  recommendations:
+    browser_hardening: true
+    email_segmentation: true
+    device_separation: true
+    metadata_stripping: true
+    dns_privacy: true
+    vpn_usage: true
+  
+  browser_config:
+    firefox_profiles: 2
+    chrome_profiles: 1
+    container_usage: true
+  
+  email:
+    create_segments: true
+    segments:
+      - professional
+      - personal
+      - privacy
+  
+  network:
+    vpn_recommended: true
+    tor_recommended: false  # Only if needed
+    dns_over_https: true
+
+reporting:
+  enabled: true
+  
+  generation:
+    frequency: "weekly"
+    formats:
+      - json
+      - html
+      - pdf
+  
+  includes:
+    - identity_graph
+    - exposure_summary
+    - severity_analysis
+    - removal_status
+    - search_visibility
+    - reappearance_tracking
+    - recommendations
+    - timeline
+  
+  distribution:
+    email_report: false
+    dashboard_update: true
+    archive: true
+
+dashboard:
+  enabled: true
+  port: 8000
+  refresh_interval: 3600  # seconds
+  
+  widgets:
+    - exposure_count
+    - severity_breakdown
+    - removal_progress
+    - search_visibility
+    - reappearance_trend
+    - monitoring_status
+
+api:
+  # Third-party integrations
+  google_search_console:
+    enabled: false
+    key_file: null  # Set path to credentials JSON
+  
+  bing_webmaster:
+    enabled: false
+    api_key: null  # Set in .env
+  
+  archive_org:
+    enabled: true
+    api_key: null  # Optional
+
+compliance:
+  regulations:
+    - ccpa  # California
+    - gdpr  # EU
+    - dpia  # General
+  
+  documentation:
+    maintain_audit_log: true
+    store_removal_evidence: true
+    keep_correspondence: true
+  
+  retention:
+    audit_logs_days: 365
+    removal_evidence_days: 180
+    monitoring_results_days: 90
+
+automation:
+  enabled: true
+  
+  workflows:
+    data_broker_removal:
+      enabled: true
+      platforms:
+        - whitepages
+        - spokeo
+        - intelius
+    
+    privacy_requests:
+      enabled: true
+      batch_size: 10
+      wait_between_requests: 300  # seconds
+    
+    search_monitoring:
+      enabled: true
+      schedule: "0 9 * * *"  # Daily at 9 AM
+  
+  browser_automation:
+    screenshot_on_action: false
+    store_html: false
+    headless: true
+
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  format: "json"  # json, text
+  file: "logs/footprint_ops.log"
+  max_size_mb: 100
+  backup_count: 5
+  
+  structured:
+    enabled: true
+    include_context: true
+    include_timestamp: true
+
+performance:
+  max_concurrent_operations: 5
+  request_timeout: 30
+  retry_delay: 5
+  max_retries: 3
+  cache_enabled: true
+  cache_ttl_hours: 24
+
+experimental:
+  ai_exposure_detection: false
+  ml_correlation_analysis: false
+  predictive_reappearance: false
+  automated_removal_strategies: false
+
+# Important security notes:
+# - Keep this file secure (restricted permissions)
+# - Sensitive values should be in .env, not here
+# - Database encryption key must be set
+# - API keys should be in environment variables
+# - Never commit credentials to git
