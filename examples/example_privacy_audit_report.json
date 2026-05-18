@@ -1,0 +1,161 @@
+{
+  "audit_date": "2026-06-15",
+  "audit_type": "comprehensive_monthly_audit",
+  "email": "example@email.com",
+  "audit_duration_minutes": 8.5,
+  "overall_privacy_score": {
+    "score": 52,
+    "out_of": 100,
+    "rating": "MEDIUM RISK",
+    "trend": "Improving (was 85)",
+    "improvement_percentage": 38.8
+  },
+  "audit_sections": {
+    "github_audit": {
+      "status": "completed",
+      "platform": "GitHub",
+      "username": "example_user",
+      "profile_url": "https://github.com/example_user",
+      "findings": {
+        "profile_public": true,
+        "email_visible": false,
+        "repositories_count": 8,
+        "public_repositories": 5,
+        "repositories_indexed_in_google": 3,
+        "sensitive_information_found": 0
+      },
+      "risk_level": "LOW",
+      "recommendations": [
+        "Profile is public - this is normal for developers",
+        "Email is hidden - Good",
+        "No sensitive information detected in repositories",
+        "Consider adding GitHub-specific privacy policy"
+      ]
+    },
+    "search_engine_audit": {
+      "status": "completed",
+      "platforms": [
+        "Google",
+        "Bing",
+        "DuckDuckGo"
+      ],
+      "findings": {
+        "google": {
+          "search_results": 0,
+          "data_broker_results": 0,
+          "personal_sites": 0,
+          "archives": 0,
+          "indexed_pages": 0
+        },
+        "bing": {
+          "search_results": 0,
+          "indexed_pages": 0
+        },
+        "duckduckgo": {
+          "search_results": 0
+        }
+      },
+      "risk_level": "LOW",
+      "summary": "Your name is no longer appearing in search results - Excellent!",
+      "recommendations": [
+        "Continue monitoring monthly for reappearances",
+        "If anything reappears, resubmit removal requests"
+      ]
+    },
+    "data_broker_audit": {
+      "status": "completed",
+      "brokers_scanned": 9,
+      "brokers_with_listings": 5,
+      "listings_found": 8,
+      "findings": {
+        "easy_brokers": {
+          "total": 1,
+          "with_listings": 0,
+          "removed_count": 1,
+          "status": "Complete"
+        },
+        "medium_brokers": {
+          "total": 5,
+          "with_listings": 3,
+          "listings_count": 5,
+          "in_progress_count": 3,
+          "verified_removed_count": 2,
+          "status": "In Progress"
+        },
+        "hard_brokers": {
+          "total": 3,
+          "with_listings": 2,
+          "listings_count": 3,
+          "status": "Not Started"
+        }
+      },
+      "risk_level": "MEDIUM",
+      "recommendations": [
+        "Phase 2 removals are processing well",
+        "Schedule Phase 3 (Hard) brokers for next week",
+        "Expect complete removal by mid-July",
+        "Continue monitoring for reappearances"
+      ]
+    },
+    "social_media_audit": {
+      "status": "completed",
+      "platforms_checked": 8,
+      "active_profiles": 1,
+      "dormant_profiles": 0,
+      "findings": {
+        "linkedin": {
+          "profile_exists": true,
+          "public": true,
+          "search_indexed": true,
+          "risk": "LOW",
+          "status": "Active",
+          "notes": "Standard LinkedIn profile - privacy is reasonable"
+        },
+        "twitter": {
+          "profile_exists": false,
+          "status": "No account found"
+        },
+        "facebook": {
+          "profile_exists": false,
+          "status": "No account found or profile private"
+        },
+        "instagram": {
+          "profile_exists": false,
+          "status": "No account found"
+        },
+        "tiktok": {
+          "profile_exists": false,
+          "status": "No account found"
+        },
+        "youtube": {
+          "profile_exists": true,
+          "public": false,
+          "risk": "LOW",
+          "status": "Disabled/Private"
+        }
+      },
+      "risk_level": "LOW",
+      "recommendations": [
+        "LinkedIn is fine - essential for professional networking",
+        "YouTube is private - Good",
+        "Minimal social media footprint is excellent",
+        "Review LinkedIn privacy settings periodically"
+      ]
+    },
+    "breach_audit": {
+      "status": "completed",
+      "email_monitored": "example@email.com",
+      "source": "Have I Been Pwned",
+      "findings": {
+        "breaches_total": 2,
+        "breaches_with_password": 2,
+        "breaches_critical": 0,
+        "breaches_high_severity": 2,
+        "breaches_medium_severity": 0,
+        "most_recent_breach": {
+          "service": "LinkedIn",
+          "date": "2021-06-22",
+          "years_ago": 5,
+          "password_exposed": true
+        },
+        "oldest_breach": {\n          \"service\": \"MyFitnessPal\",\n          \"date\": \"2018-03-12\",\n          \"years_ago\": 8,\n          \"password_exposed\": true\n        }\n      },\n      \"risk_level\": \"HIGH\",\n      \"recommendations\": [\n        \"Change passwords for breached accounts\",\n        \"Enable two-factor authentication where available\",\n        \"Use unique passwords for each service\",\n        \"Monitor accounts for unusual activity\",\n        \"Continue daily breach monitoring via framework\"\n      ]\n    },\n    \"password_security_audit\": {\n      \"status\": \"completed\",\n      \"findings\": {\n        \"password_compromised\": true,\n        \"k_anonymity\": \"compromised\",\n        \"accounts_using_compromised_password\": \"Unknown - check manually\",\n        \"password_strength\": \"Unknown - check current password\",\n        \"unique_passwords\": \"Unknown - assess usage\"\n      },\n      \"risk_level\": \"CRITICAL\",\n      \"recommendations\": [\n        \"Change ALL passwords for breached accounts\",\n        \"Create new unique password (16+ chars, mixed case, symbols)\",\n        \"Install password manager (Bitwarden, 1Password, KeePass)\",\n        \"Stop reusing passwords across accounts\",\n        \"Enable two-factor authentication on critical accounts\"\n      ]\n    },\n    \"privacy_settings_audit\": {\n      \"status\": \"completed\",\n      \"areas_checked\": [\n        \"Email visibility\",\n        \"Phone visibility\",\n        \"Address visibility\",\n        \"Birth date visibility\",\n        \"Social media links\"\n      ],\n      \"findings\": {\n        \"email_publicly_available\": false,\n        \"phone_publicly_available\": false,\n        \"address_removed_from_brokers\": 0,\n        \"birth_date_exposed\": false\n      },\n      \"risk_level\": \"LOW\",\n      \"recommendations\": [\n        \"Current privacy settings are appropriate\",\n        \"Continue monitoring after removals complete\",\n        \"Review settings quarterly\"\n      ]\n    }\n  },\n  \"risk_summary\": {\n    \"critical_issues\": [\n      \"Password exposed in breaches - CHANGE IMMEDIATELY\"\n    ],\n    \"high_priority\": [\n      \"5 data broker listings still active - removal in progress\",\n      \"3 hard brokers not yet started\"\n    ],\n    \"medium_priority\": [\n      \"Some archive.org snapshots exist\",\n      \"Monitor for reappearances\"\n    ],\n    \"low_priority\": [\n      \"LinkedIn profile is public (normal for professionals)\"\n    ]\n  },\n  \"action_items\": {\n    \"immediate_today\": [\n      \"Change password for LinkedIn account\",\n      \"Change password for MyFitnessPal account\",\n      \"Enable two-factor authentication\"\n    ],\n    \"this_week\": [\n      \"Verify WhitePages removal\",\n      \"Verify MyLife removal\",\n      \"Gather documents for Phase 3 brokers\"\n    ],\n    \"this_month\": [\n      \"Submit Phase 3 (Hard) broker removals\",\n      \"Check for any reappearances\",\n      \"Review all passwords for uniqueness\"\n    ],\n    \"ongoing\": [\n      \"Let daily automated monitoring run\",\n      \"Monthly privacy audit\",\n      \"Monthly password review\",\n      \"Quarterly social media audit\"\n    ]\n  },\n  \"historical_comparison\": {\n    \"first_audit_date\": \"2026-05-18\",\n    \"previous_audit_date\": \"2026-06-01\",\n    \"first_audit_score\": 85,\n    \"previous_audit_score\": 63,\n    \"current_audit_score\": 52,\n    \"total_improvement\": 33,\n    \"improvement_this_month\": 11,\n    \"trend\": \"Consistent improvement\",\n    \"projection\": \"Reach low risk (30) by end of July\"\n  },\n  \"automation_status\": {\n    \"daily_monitoring_jobs\": 3,\n    \"weekly_monitoring_jobs\": 3,\n    \"monthly_monitoring_jobs\": 3,\n    \"total_jobs_running\": 9,\n    \"success_rate\": \"99.8%\",\n    \"status\": \"All systems operational\"\n  },\n  \"audit_completeness\": {\n    \"sections_completed\": 7,\n    \"sections_total\": 7,\n    \"completeness_percentage\": 100,\n    \"data_quality\": \"Complete\"\n  },\n  \"next_audit_scheduled\": \"2026-07-15T12:00:00Z\",\n  \"export_format\": {\n    \"json\": \"This file\",\n    \"csv\": \"Available via CLI\",\n    \"html\": \"Available via dashboard\",\n    \"pdf\": \"Can be generated\"\n  }\n}

@@ -1,0 +1,107 @@
+{
+  "email": "example@email.com",
+  "timestamp": "2026-05-18T14:30:00Z",
+  "check_duration_seconds": 2.34,
+  "breaches_found": 2,
+  "password_compromised": true,
+  "risk_assessment": {
+    "score": 75,
+    "level": "HIGH",
+    "recommendation": "Change passwords immediately for affected accounts"
+  },
+  "breaches": [
+    {
+      "breach_id": "LinkedIn2021",
+      "name": "LinkedIn",
+      "title": "LinkedIn Security Incident",
+      "breach_date": "2021-06-22",
+      "added_date": "2021-06-23",
+      "pw_breached": true,
+      "email_breached": true,
+      "data_classes": [
+        "Email addresses",
+        "Passwords",
+        "Usernames",
+        "Names",
+        "Phone numbers"
+      ],
+      "impact_level": "CRITICAL",
+      "action_required": "Change password immediately",
+      "severity_score": 95,
+      "description": "Major social network suffered breach exposing millions of user accounts including passwords in plain text."
+    },
+    {
+      "breach_id": "MyFitnessPal2018",
+      "name": "MyFitnessPal",
+      "title": "MyFitnessPal Data Breach",
+      "breach_date": "2018-03-12",
+      "added_date": "2018-03-25",
+      "pw_breached": true,
+      "email_breached": true,
+      "data_classes": [
+        "Email addresses",
+        "Passwords",
+        "Usernames",
+        "Names",
+        "Dates of birth"
+      ],
+      "impact_level": "HIGH",
+      "action_required": "Change password immediately",
+      "severity_score": 85,
+      "description": "Fitness tracking application exposed user credentials and fitness data for approximately 150 million users."
+    }
+  ],
+  "password_status": {
+    "k_anonymity_check": "Present in breach databases",
+    "secure_password": false,
+    "suggestions": [
+      "Create a new unique password for each account",
+      "Use 16+ characters with mixed case and symbols",
+      "Enable two-factor authentication where available",
+      "Use a password manager (1Password, Bitwarden, KeePass)"
+    ]
+  },
+  "accounts_affected": [
+    {
+      "service": "LinkedIn",
+      "breach_date": "2021-06-22",
+      "action": "Change password immediately",
+      "mfa_available": true,
+      "enable_mfa_url": "https://www.linkedin.com/psettings/security"
+    },
+    {
+      "service": "MyFitnessPal",
+      "breach_date": "2018-03-12",
+      "action": "Change password immediately",
+      "mfa_available": false,
+      "enable_mfa_url": null
+    }
+  ],
+  "remediation_plan": {
+    "immediate": [
+      "Change LinkedIn password - https://www.linkedin.com/psettings/security",
+      "Change MyFitnessPal password - https://www.myfitnesspal.com/account/settings"
+    ],
+    "within_24_hours": [
+      "Enable two-factor authentication on LinkedIn",
+      "Check account activity for suspicious actions",
+      "Monitor email for unauthorized access"
+    ],
+    "within_1_week": [
+      "Change passwords for other accounts using same password",
+      "Review account recovery options",
+      "Set up password manager if not already done"
+    ],
+    "ongoing": [
+      "Monitor HIBP for new breaches (daily via framework)",
+      "Watch accounts for suspicious activity",
+      "Review account security regularly"
+    ]
+  },
+  "tips": [
+    "These breaches are from past incidents - not current vulnerability",
+    "Criminals may have these credentials - change passwords immediately",
+    "Not your fault - these companies were compromised",
+    "Monitor this email for future breaches"
+  ]
+}

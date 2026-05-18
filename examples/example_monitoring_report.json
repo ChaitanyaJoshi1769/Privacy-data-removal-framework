@@ -1,0 +1,260 @@
+{
+  "report_date": "2026-06-15",
+  "report_period": "June 1-15, 2026",
+  "monitoring_start_date": "2026-05-18",
+  "total_monitoring_days": 28,
+  "email": "example@email.com",
+  "report_type": "bi-weekly_summary",
+  "executive_summary": {
+    "exposure_score_before": 85,
+    "exposure_score_current": 52,
+    "exposure_reduction": 33,
+    "reduction_percentage": 38.8,
+    "status": "Good Progress",
+    "next_milestone": "Get below 30 (low risk)"
+  },
+  "daily_monitoring_jobs": {
+    "hibp_breach_check": {
+      "frequency": "Daily at 3:00 AM UTC",
+      "last_run": "2026-06-15T03:00:00Z",
+      "status": "active",
+      "runs_completed": 28,
+      "breaches_detected": 0,
+      "new_breaches_found": 0,
+      "total_breaches_on_record": 2,
+      "password_compromise_status": "compromised",
+      "remediation_status": "Awaiting password change confirmation"
+    },
+    "search_monitoring": {
+      "frequency": "Daily at 6:00 AM UTC",
+      "last_run": "2026-06-15T06:00:00Z",
+      "status": "active",
+      "runs_completed": 28,
+      "google_search_results": 4,
+      "bing_search_results": 3,
+      "results_trend": "Decreasing",
+      "urls_removed": 7,
+      "urls_still_appearing": 0,
+      "notes": "Search deindexing completed successfully"
+    },
+    "archive_scanning": {
+      "frequency": "Daily at 9:00 AM UTC",
+      "last_run": "2026-06-15T09:00:00Z",
+      "status": "active",
+      "runs_completed": 28,
+      "archive_urls_found": 1,
+      "archive_snapshots": 3,
+      "removal_requests_submitted": 1,
+      "notes": "Internet Archive has historical snapshots"
+    }
+  },
+  "weekly_monitoring_jobs": {
+    "broker_rescan": {
+      "frequency": "Every Monday at 2:00 AM UTC",
+      "last_run": "2026-06-15T02:00:00Z",
+      "status": "active",
+      "runs_completed": 4,
+      "brokers_scanned": 9,
+      "listings_found": 5,
+      "new_listings": 0,
+      "reappearances": 0,
+      "removals_verified": 2,
+      "removals_pending": 3,
+      "removals_not_started": 4,
+      "summary": "No new listings detected, 2 removals verified"
+    },
+    "social_media_audit": {
+      "frequency": "Every Wednesday at 10:00 AM UTC",
+      "last_run": "2026-06-11T10:00:00Z",
+      "status": "active",
+      "runs_completed": 4,
+      "platforms_checked": 8,
+      "public_profiles": 1,
+      "indexed_profiles": 0,
+      "recommendations": [
+        "GitHub profile is public - consider making private",
+        "Twitter account appears dormant - can delete or lock",
+        "LinkedIn profile is standard"
+      ]
+    },
+    "removal_verification": {
+      "frequency": "Every Friday at 2:00 PM UTC",
+      "last_run": "2026-06-13T14:00:00Z",
+      "status": "active",
+      "runs_completed": 4,
+      "submissions_verified": 2,
+      "submissions_still_processing": 3,
+      "submissions_failed": 0,
+      "resubmissions_needed": 0,
+      "verified_removals": [
+        "TrueCaller - verified removed 2026-05-25",
+        "PeopleFinder - verified removed 2026-06-10"
+      ],
+      "pending_removals": [
+        "WhitePages - expected 2026-06-03",
+        "MyLife - expected 2026-06-12",
+        "FamilyTreeNow - expected 2026-06-03"
+      ]
+    }
+  },
+  "monthly_monitoring_jobs": {
+    "credit_monitoring": {
+      "frequency": "1st of month at 6:00 AM UTC",
+      "last_run": "2026-06-01T06:00:00Z",
+      "status": "active",
+      "credit_file_exists": true,
+      "suspicious_activity": false,
+      "new_accounts": false,
+      "inquiries": 0,
+      "status_notes": "No suspicious activity detected"
+    },
+    "dark_web_scan": {
+      "frequency": "15th of month at 3:00 AM UTC",
+      "last_run": "2026-06-15T03:00:00Z",
+      "status": "active",
+      "credentials_found": 0,
+      "databases_checked": 15,
+      "credentials_on_dark_web": false,
+      "recommendations": "Continue monitoring"
+    },
+    "comprehensive_audit": {
+      "frequency": "20th of month at 9:00 AM UTC",
+      "last_run": "Scheduled next run: 2026-06-20T09:00:00Z",
+      "status": "scheduled"
+    }
+  },
+  "alerts_and_notifications": {
+    "critical_alerts": 0,
+    "high_alerts": 0,
+    "medium_alerts": 1,
+    "low_alerts": 2,
+    "alerts": [
+      {
+        "date": "2026-06-10",
+        "severity": "MEDIUM",
+        "type": "Removal Verified",
+        "message": "PeopleFinder removal verified - listing no longer found"
+      },
+      {
+        "date": "2026-06-05",
+        "severity": "LOW",
+        "type": "Processing Update",
+        "message": "WhitePages removal in progress - 8 days remaining"
+      },
+      {
+        "date": "2026-06-01",
+        "severity": "LOW",
+        "type": "Monitoring Update",
+        "message": "Monthly credit check completed - no suspicious activity"
+      }
+    ]
+  },
+  "data_broker_status": {
+    "phase_1_easy": {
+      "brokers": 1,
+      "status_breakdown": {
+        "verified_removed": 1,
+        "completion_percentage": 100
+      },
+      "trend": "Complete"
+    },
+    "phase_2_medium": {
+      "brokers": 5,
+      "status_breakdown": {
+        "verified_removed": 2,
+        "processing": 3,
+        "not_started": 0
+      },
+      "completion_percentage": 40,
+      "trend": "In progress"
+    },
+    "phase_3_hard": {
+      "brokers": 3,
+      "status_breakdown": {
+        "verified_removed": 0,
+        "processing": 0,
+        "not_started": 3
+      },
+      "completion_percentage": 0,
+      "trend": "Not yet started"
+    }
+  },
+  "search_engine_status": {
+    "google": {
+      "urls_removed": 4,
+      "urls_still_indexed": 0,
+      "cache_purged": true,
+      "robots_txt_updated": false,
+      "status": "Successfully deindexed"
+    },
+    "bing": {
+      "urls_removed": 3,
+      "urls_still_indexed": 0,
+      "disavow_file_uploaded": true,
+      "status": "Successfully deindexed"
+    },
+    "overall_search_presence": "Minimal - 0 current appearances"
+  },
+  "privacy_metrics": {
+    "exposure_score": {
+      "score": 52,
+      "level": "MEDIUM",
+      "change_from_start": -33,
+      "percentage_improvement": 38.8,
+      "goal": "Below 30 (Low risk)",
+      "days_to_goal_estimate": 20
+    },
+    "online_presence": {
+      "data_brokers_containing_data": 5,
+      "search_results": 0,
+      "social_media_profiles": 1,
+      "archived_copies": 1,
+      "trend": "Decreasing"
+    },
+    "threat_level": {
+      "level": "MEDIUM",
+      "trends": [
+        "Exposure score declining - Good",
+        "No new breaches - Good",
+        "Removals completing - Good",
+        "Some brokers still processing - Normal"
+      ]
+    }
+  },
+  "recommendations": {
+    "immediate": [
+      "Continue monitoring broker processing",
+      "Schedule Phase 3 (Hard) broker submissions for next week"
+    ],
+    "this_week": [
+      "Verify MyLife and FamilyTreeNow removals when complete",
+      "Prepare documents for Spokeo removal (Phase 3)",
+      "Update removal tracking spreadsheet"
+    ],
+    "ongoing": [
+      "Let automated jobs continue running",
+      "Check dashboard weekly for updates",
+      "Act immediately if new breaches detected"
+    ],
+    "future": [
+      "Consider credit freeze if concerned about identity theft",
+      "Review privacy settings on remaining social profiles",
+      "Plan privacy hardening measures (DuckDuckGo, VPN, etc.)"
+    ]
+  },
+  "comparison_with_previous_period": {
+    "previous_report_date": "2026-06-01",
+    "exposure_score_change": -11,
+    "search_results_change": -2,
+    "broker_removals_verified_change": +1,
+    "trend": "Steady progress"
+  },
+  "uptime_and_reliability": {
+    "monitoring_uptime": "100%",
+    "job_completion_rate": "99.8%",
+    "failed_runs": 0,
+    "avg_response_time_seconds": 2.1,
+    "notes": "Framework operating reliably"
+  },
+  "next_report_scheduled": "2026-06-30T12:00:00Z"
+}
