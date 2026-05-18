@@ -1,0 +1,47 @@
+{
+  "checklist_id": "verification_001",
+  "timeline": "30-60 days after removal submission",
+  "verifications": [
+    {
+      "exposure": "GitHub Profile",
+      "check": "Review profile settings + audit for sensitive data",
+      "expected": "Public data minimized, 2FA enabled",
+      "status": "pending"
+    },
+    {
+      "exposure": "Spokeo",
+      "check": "Search for profile on spokeo.com",
+      "expected": "No profile found or marked as 'removed'",
+      "timeline": "5-7 days",
+      "status": "pending"
+    },
+    {
+      "exposure": "WhitePages",
+      "check": "Search whitepages.com for your name",
+      "expected": "No profile found",
+      "timeline": "7-10 days",
+      "status": "pending"
+    },
+    {
+      "exposure": "Google Search",
+      "check": "Search 'Chaitanya Joshi' + variations in Google",
+      "expected": "Negative results pushed to page 2+",
+      "timeline": "7-14 days",
+      "status": "pending"
+    },
+    {
+      "exposure": "Bing Search",
+      "check": "Search in Bing for your name",
+      "expected": "URLs removed from results",
+      "timeline": "7-14 days",
+      "status": "pending"
+    },
+    {
+      "exposure": "Archive.org",
+      "check": "Check https://web.archive.org for snapshots",
+      "expected": "No recent snapshots, exclusion requested",
+      "timeline": "14-21 days",
+      "status": "pending"
+    }
+  ]
+}

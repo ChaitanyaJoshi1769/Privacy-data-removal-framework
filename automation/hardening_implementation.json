@@ -1,0 +1,110 @@
+{
+  "implementation_id": "hardening_001",
+  "level": "Level 1 - Basic",
+  "timeline_weeks": 3,
+  "cost": "$60/year",
+  "tasks": [
+    {
+      "week": 1,
+      "category": "Browser Setup",
+      "items": [
+        {
+          "task": "Install Firefox ESR",
+          "status": "pending",
+          "effort": "30 min",
+          "cost": "free"
+        },
+        {
+          "task": "Install uBlock Origin",
+          "status": "pending",
+          "effort": "15 min",
+          "cost": "free"
+        },
+        {
+          "task": "Install Privacy Badger",
+          "status": "pending",
+          "effort": "15 min",
+          "cost": "free"
+        },
+        {
+          "task": "Install HTTPS Everywhere",
+          "status": "pending",
+          "effort": "15 min",
+          "cost": "free"
+        }
+      ]
+    },
+    {
+      "week": 1,
+      "category": "Email Compartmentalization",
+      "items": [
+        {
+          "task": "Create personal email (family/close friends only)",
+          "status": "pending",
+          "effort": "30 min"
+        },
+        {
+          "task": "Create essential services email (banking, critical)",
+          "status": "pending",
+          "effort": "30 min"
+        },
+        {
+          "task": "Create general signups email (newsletters, shopping)",
+          "status": "pending",
+          "effort": "30 min"
+        },
+        {
+          "task": "Create disposable email (one-time services)",
+          "status": "pending",
+          "effort": "30 min"
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "category": "Password Manager",
+      "items": [
+        {
+          "task": "Install Bitwarden",
+          "status": "pending",
+          "effort": "30 min",
+          "cost": "free"
+        },
+        {
+          "task": "Generate unique passwords for all accounts",
+          "status": "pending",
+          "effort": "3-4 hours",
+          "cost": "free"
+        },
+        {
+          "task": "Update critical accounts (email, banking)",
+          "status": "pending",
+          "effort": "1 hour"
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "category": "Two-Factor Authentication",
+      "items": [
+        {
+          "task": "Install authenticator app (Google Authenticator, Authy)",
+          "status": "pending",
+          "effort": "15 min",
+          "cost": "free"
+        },
+        {
+          "task": "Enable 2FA on critical accounts",
+          "status": "pending",
+          "effort": "2 hours",
+          "accounts": [
+            "Email",
+            "Banking",
+            "GitHub",
+            "Social media"
+          ]
+        }
+      ]
+    }
+  ]
+}

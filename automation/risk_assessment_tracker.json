@@ -1,0 +1,36 @@
+{
+  "update_frequency": "weekly",
+  "assessment_template": {
+    "week": 1,
+    "exposures_assessed": {
+      "github_profile": {
+        "risk_before": 22.5,
+        "risk_after": null,
+        "action": "secure"
+      },
+      "search_indexing": {
+        "risk_before": 41.2,
+        "risk_after": null,
+        "action": "pending"
+      },
+      "breach_risk": {
+        "risk_before": 50.4,
+        "risk_after": null,
+        "action": "assess"
+      },
+      "data_brokers": {
+        "risk_before": 9.0,
+        "risk_after": null,
+        "action": "remove"
+      },
+      "archive_org": {
+        "risk_before": 47.5,
+        "risk_after": null,
+        "action": "pending"
+      }
+    },
+    "overall_risk_score_before": 170.6,
+    "overall_risk_score_after": null,
+    "improvement_percentage": null
+  }
+}

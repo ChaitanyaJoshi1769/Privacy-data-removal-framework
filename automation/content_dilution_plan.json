@@ -1,0 +1,47 @@
+{
+  "strategy_id": "dilution_001",
+  "timeline_weeks": 12,
+  "goal": "Push negative/sensitive results to page 3+ through positive content ranking",
+  "content_plan": [
+    {
+      "week": 1,
+      "task": "Complete LinkedIn profile",
+      "effort": "2 hours",
+      "status": "pending"
+    },
+    {
+      "week": 2,
+      "task": "Create technical blog or personal website",
+      "effort": "4 hours",
+      "status": "pending"
+    },
+    {
+      "week": 3,
+      "task": "Publish first blog post (SEO optimized)",
+      "effort": "3 hours",
+      "keywords": [
+        "Chaitanya Joshi",
+        "privacy",
+        "security"
+      ]
+    },
+    {
+      "week": 4,
+      "task": "Guest post on reputable tech publication",
+      "effort": "3 hours"
+    },
+    {
+      "weeks": "5-12",
+      "task": "Regular blog posts + social sharing",
+      "effort": "5-10 hours/week",
+      "goal": "Rank positively for your name/terms"
+    }
+  ],
+  "seo_guidelines": [
+    "Optimize for 'Chaitanya Joshi + privacy/security/tech'",
+    "Build backlinks from authority tech sites",
+    "Share content on social media",
+    "Maintain consistent publishing schedule",
+    "Monitor search positions weekly"
+  ]
+}

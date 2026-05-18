@@ -1,0 +1,37 @@
+{
+  "tracking_template": [
+    {
+      "exposure_id": "exp_001",
+      "type": "GitHub Public Profile",
+      "broker": "GitHub.com",
+      "status": "pending",
+      "submitted_date": null,
+      "confirmation_num": "",
+      "expected_completion": "2026-05-19",
+      "verified_removed": false,
+      "notes": ""
+    },
+    {
+      "exposure_id": "exp_004",
+      "type": "Email Breach Risk",
+      "broker": "Have I Been Pwned",
+      "status": "pending",
+      "submitted_date": null,
+      "confirmation_num": "",
+      "expected_completion": "2026-05-19",
+      "verified_removed": false,
+      "notes": "Check for breaches"
+    },
+    {
+      "exposure_id": "exp_005_broker_1",
+      "type": "Data Broker Listing",
+      "broker": "Spokeo.com",
+      "status": "pending",
+      "submitted_date": null,
+      "confirmation_num": "",
+      "expected_completion": "2026-05-25",
+      "verified_removed": false,
+      "notes": ""
+    }
+  ]
+}

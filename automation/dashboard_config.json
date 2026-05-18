@@ -1,0 +1,53 @@
+{
+  "dashboard_id": "dashboard_001",
+  "name": "Privacy Remediation Dashboard",
+  "refresh_interval": "5 minutes",
+  "widgets": [
+    {
+      "widget": "Overall Progress",
+      "metrics": [
+        "Total removals completed",
+        "Removal success rate",
+        "Days remaining"
+      ]
+    },
+    {
+      "widget": "Exposure Status",
+      "display": [
+        "GitHub: Pending",
+        "Search engines: Pending",
+        "Data brokers (9): Pending",
+        "Archive.org: Pending"
+      ]
+    },
+    {
+      "widget": "Breach Alerts",
+      "monitor": "Have I Been Pwned API",
+      "alerts": "New breaches containing chaitanyajoshi15@gmail.com"
+    },
+    {
+      "widget": "Search Positions",
+      "tracking": [
+        "Page position of search results",
+        "Negative result visibility"
+      ]
+    },
+    {
+      "widget": "Weekly Progress",
+      "display": [
+        "Hours completed",
+        "Tasks done",
+        "On schedule"
+      ]
+    },
+    {
+      "widget": "Alert Status",
+      "rules": [
+        "CRITICAL: New breach detected",
+        "HIGH: Broker refuses removal",
+        "MEDIUM: Search result not indexed",
+        "LOW: Routine monitoring update"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "job_id": "monitoring_001",
+  "jobs": [
+    {
+      "job_name": "Daily Breach Check",
+      "frequency": "daily",
+      "time": "06:00 UTC",
+      "service": "Have I Been Pwned API",
+      "query": "chaitanyajoshi15@gmail.com",
+      "alert_condition": "breach_detected",
+      "action": "Send CRITICAL alert email",
+      "status": "ready_to_implement"
+    },
+    {
+      "job_name": "Weekly Data Broker Scan",
+      "frequency": "weekly",
+      "day": "Monday",
+      "time": "08:00 UTC",
+      "brokers": 9,
+      "action": "Check if profile reappeared",
+      "alert_if": "Profile reappears after removal"
+    },
+    {
+      "job_name": "Search Position Tracker",
+      "frequency": "daily",
+      "queries": [
+        "Chaitanya Joshi",
+        "chaitanyajoshi15",
+        "ChaitanyaJoshi1769"
+      ],
+      "action": "Track position in Google results",
+      "alert_if": "Negative result appears on page 1"
+    },
+    {
+      "job_name": "Dark Web Scan",
+      "frequency": "weekly",
+      "service": "Dark web monitoring service",
+      "search_terms": [
+        "chaitanyajoshi15@gmail.com",
+        "Chaitanya Joshi",
+        "ChaitanyaJoshi1769"
+      ],
+      "alert_if": "Mention detected on dark web"
+    }
+  ]
+}

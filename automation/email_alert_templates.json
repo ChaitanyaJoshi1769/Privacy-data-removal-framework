@@ -1,0 +1,23 @@
+{
+  "alert_templates": [
+    {
+      "alert_id": "alert_breach_detected",
+      "severity": "CRITICAL",
+      "subject": "\ud83d\udea8 [CRITICAL] New Breach Detected - Immediate Action Required",
+      "template": "\nALERT: Your email has appeared in a new data breach!\n\nEmail: chaitanyajoshi15@gmail.com\nBreach: [BREACH_NAME]\nExposed Data: [EXPOSED_DATA]\nDate Discovered: [DATE]\n\nIMMEDIATE ACTIONS:\n1. Change password on any exposed services\n2. Enable 2FA on affected accounts\n3. Monitor credit reports for suspicious activity\n4. Consider freezing credit if personal data exposed\n\nTime to respond: Within 24 hours\n",
+      "response_sla": "5 minutes"
+    },
+    {
+      "alert_id": "alert_removal_success",
+      "severity": "LOW",
+      "subject": "\u2705 [SUCCESS] Removal Confirmed",
+      "template": "\nRemoval Confirmed!\n\nService: [SERVICE_NAME]\nStatus: Successfully removed\nConfirmation #: [CONFIRMATION_NUM]\nDate: [DATE]\n\nYour personal data has been removed from this service.\nRemoval confirmed on: [VERIFICATION_DATE]\n"
+    },
+    {
+      "alert_id": "alert_broker_refusal",
+      "severity": "HIGH",
+      "subject": "\u26a0\ufe0f [HIGH] Broker Refused Removal - Escalation Needed",
+      "template": "\nBroker Removal Refused\n\nService: [SERVICE_NAME]\nReason: [REFUSAL_REASON]\nDate: [DATE]\n\nNEXT STEPS:\n1. Send formal GDPR/CCPA request (see templates)\n2. Document refusal with date/time\n3. Escalate to legal if necessary\n4. Resubmit in 30 days if applicable\n"
+    }
+  ]
+}
