@@ -1,0 +1,131 @@
+name: Daily Privacy Monitoring
+
+on:
+  schedule:
+    # Run at 3 AM UTC every day
+    - cron: '0 3 * * *'
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  daily-monitoring:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r scripts/requirements.txt
+
+      - name: Run HIBP Breach Check
+        run: |
+          python3 scripts/automation_cli.py monitor --check hibp --email ${{ secrets.MONITORING_EMAIL }}
+        continue-on-error: true
+
+      - name: Run Search Engine Monitoring
+        run: |
+          python3 scripts/automation_cli.py monitor --check search
+        continue-on-error: true
+
+      - name: Run Archive.org Monitoring
+        run: |
+          python3 scripts/automation_cli.py monitor --check archive
+        continue-on-error: true
+
+      - name: Upload monitoring results
+        uses: actions/upload-artifact@v3
+        with:
+          name: daily-monitoring-results
+          path: logs/
+        continue-on-error: true
+
+      - name: Commit monitoring results
+        run: |
+          git config --local user.email "privacy-bot@example.com"
+          git config --local user.name "Privacy Monitoring Bot"
+          git add logs/
+          git commit -m "Automated daily monitoring results - $(date)" || true
+          git push
+        continue-on-error: true
+
+  weekly-verification:
+    runs-on: ubuntu-latest
+    if: github.event.schedule == '0 2 * * 1'  # Monday at 2 AM UTC
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r scripts/requirements.txt
+
+      - name: Data Broker Rescan
+        run: |
+          python3 scripts/automation_cli.py removal --search
+        continue-on-error: true
+
+      - name: Generate Weekly Report
+        run: |
+          python3 scripts/automation_cli.py report --type progress --period weekly
+        continue-on-error: true
+
+      - name: Generate Dashboard
+        run: |
+          python3 scripts/dashboard_server.py
+        continue-on-error: true
+
+      - name: Upload weekly results
+        uses: actions/upload-artifact@v3
+        with:
+          name: weekly-verification-results
+          path: logs/
+        continue-on-error: true
+
+  monthly-audit:
+    runs-on: ubuntu-latest
+    if: github.event.schedule == '0 6 1 * *'  # 1st of month at 6 AM UTC
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r scripts/requirements.txt
+
+      - name: Comprehensive Audit
+        run: |
+          python3 scripts/automation_cli.py audit --type all --full
+        continue-on-error: true
+
+      - name: Generate Monthly Report
+        run: |
+          python3 scripts/automation_cli.py report --type monitoring
+        continue-on-error: true
+
+      - name: Upload monthly results
+        uses: actions/upload-artifact@v3
+        with:
+          name: monthly-audit-results
+          path: logs/
+        continue-on-error: true
