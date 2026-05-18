@@ -1,0 +1,92 @@
+[
+  {
+    "broker_id": "familytreenow",
+    "broker_name": "FamilyTreeNow",
+    "confirmation_number": "AUTO-FAMILYTREENOW-2026-05-18",
+    "timestamp": "2026-05-18T15:01:36.341604",
+    "status": "submitted",
+    "removal_url": "https://www.familytreenow.com/user/delete",
+    "difficulty": "medium",
+    "estimated_completion_days": 30
+  },
+  {
+    "broker_id": "intelius",
+    "broker_name": "Intelius",
+    "confirmation_number": "AUTO-INTELIUS-2026-05-18",
+    "timestamp": "2026-05-18T15:01:36.341604",
+    "status": "submitted",
+    "removal_url": "https://www.intelius.com/optout",
+    "difficulty": "hard",
+    "estimated_completion_days": 21
+  },
+  {
+    "broker_id": "mylife",
+    "broker_name": "MyLife",
+    "confirmation_number": "AUTO-MYLIFE-2026-05-18",
+    "timestamp": "2026-05-18T15:01:36.341604",
+    "status": "submitted",
+    "removal_url": "https://www.mylife.com/privacy",
+    "difficulty": "medium",
+    "estimated_completion_days": 30
+  },
+  {
+    "broker_id": "peoplefinder",
+    "broker_name": "PeopleFinder",
+    "confirmation_number": "AUTO-PEOPLEFINDER-2026-05-18",
+    "timestamp": "2026-05-18T15:01:36.341604",
+    "status": "submitted",
+    "removal_url": "https://www.peoplefinder.com/removal",
+    "difficulty": "medium",
+    "estimated_completion_days": 14
+  },
+  {
+    "broker_id": "spokeo",
+    "broker_name": "Spokeo",
+    "confirmation_number": "AUTO-SPOKEO-2026-05-18",
+    "timestamp": "2026-05-18T15:01:36.341604",
+    "status": "submitted",
+    "removal_url": "https://www.spokeo.com/optout",
+    "difficulty": "hard",
+    "estimated_completion_days": 14
+  },
+  {
+    "broker_id": "truecaller",
+    "broker_name": "TrueCaller",
+    "confirmation_number": "AUTO-TRUECALLER-2026-05-18",
+    "timestamp": "2026-05-18T15:01:36.341604",
+    "status": "submitted",
+    "removal_url": "https://www.truecaller.com/unlist",
+    "difficulty": "easy",
+    "estimated_completion_days": 7
+  },
+  {
+    "broker_id": "ussearch",
+    "broker_name": "US Search",
+    "confirmation_number": "AUTO-USSEARCH-2026-05-18",
+    "timestamp": "2026-05-18T15:01:36.341604",
+    "status": "submitted",
+    "removal_url": "https://www.ussearch.com/privacy",
+    "difficulty": "hard",
+    "estimated_completion_days": 21
+  },
+  {
+    "broker_id": "whitepages",
+    "broker_name": "White Pages",
+    "confirmation_number": "AUTO-WHITEPAGES-2026-05-18",
+    "timestamp": "2026-05-18T15:01:36.341604",
+    "status": "submitted",
+    "removal_url": "https://www.whitepages.com/suppression",
+    "difficulty": "medium",
+    "estimated_completion_days": 14
+  },
+  {
+    "broker_id": "zoominfo",
+    "broker_name": "ZoomInfo",
+    "confirmation_number": "AUTO-ZOOMINFO-2026-05-18",
+    "timestamp": "2026-05-18T15:01:36.341604",
+    "status": "submitted",
+    "removal_url": "https://www.zoominfo.com/d/update-profile",
+    "difficulty": "medium",
+    "estimated_completion_days": 14
+  }
+]

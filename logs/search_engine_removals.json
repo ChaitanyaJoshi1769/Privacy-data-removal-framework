@@ -1,0 +1,35 @@
+{
+  "google_search_console": [
+    {
+      "url": "https://github.com/ChaitanyaJoshi1769",
+      "removal_type": "temporary",
+      "status": "submitted",
+      "timestamp": "2026-05-18T15:01:50.715346",
+      "expected_removal": "1-3 days"
+    },
+    {
+      "url": "https://github.com/ChaitanyaJoshi1769?tab=repositories",
+      "removal_type": "temporary",
+      "status": "submitted",
+      "timestamp": "2026-05-18T15:01:50.715390",
+      "expected_removal": "1-3 days"
+    },
+    {
+      "url": "https://github.com/ChaitanyaJoshi1769?tab=stars",
+      "removal_type": "temporary",
+      "status": "submitted",
+      "timestamp": "2026-05-18T15:01:50.715391",
+      "expected_removal": "1-3 days"
+    }
+  ],
+  "bing_webmaster": [
+    {
+      "url": "https://github.com/ChaitanyaJoshi1769",
+      "removal_type": "cache",
+      "status": "submitted",
+      "timestamp": "2026-05-18T15:01:50.715393",
+      "expected_removal": "24-48 hours"
+    }
+  ],
+  "timestamp": "2026-05-18T15:01:50.715498"
+}

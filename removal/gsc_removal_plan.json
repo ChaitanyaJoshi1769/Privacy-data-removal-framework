@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-05-18T15:01:04.939308",
+  "total_urls": 3,
+  "priority": "high",
+  "property": "https://github.com/ChaitanyaJoshi1769",
+  "removals": [
+    {
+      "order": 1,
+      "url": "https://github.com/ChaitanyaJoshi1769",
+      "status": "pending",
+      "removal_methods": [
+        "GSC Removal",
+        "Cache Purge",
+        "robots.txt blocking"
+      ],
+      "estimated_time": "1-3 days per URL",
+      "verification_method": "Search for URL in Google"
+    },
+    {
+      "order": 2,
+      "url": "https://github.com/ChaitanyaJoshi1769?tab=repositories",
+      "status": "pending",
+      "removal_methods": [
+        "GSC Removal",
+        "Cache Purge",
+        "robots.txt blocking"
+      ],
+      "estimated_time": "1-3 days per URL",
+      "verification_method": "Search for URL in Google"
+    },
+    {
+      "order": 3,
+      "url": "https://github.com/ChaitanyaJoshi1769?tab=stars",
+      "status": "pending",
+      "removal_methods": [
+        "GSC Removal",
+        "Cache Purge",
+        "robots.txt blocking"
+      ],
+      "estimated_time": "1-3 days per URL",
+      "verification_method": "Search for URL in Google"
+    }
+  ],
+  "timeline": {
+    "start": "Day 1",
+    "completion": "7-14 days"
+  },
+  "success_criteria": [
+    "All URLs removed from Google Search results",
+    "Cache entries purged",
+    "No indexation within 2 weeks",
+    "Position tracking shows zero results"
+  ]
+}
