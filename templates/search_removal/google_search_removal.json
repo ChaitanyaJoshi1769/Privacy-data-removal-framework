@@ -1,0 +1,22 @@
+{
+  "platform": "Google Search Console",
+  "purpose": "Remove URLs from Google search index",
+  "steps": [
+    "1. Go to https://search.google.com/search-console/",
+    "2. Log in with Google account",
+    "3. Select property (your domain if you own one, otherwise use URL inspection tool)",
+    "4. Go to 'Removals' \u2192 'Temporary removals'",
+    "5. Click 'New request'",
+    "6. Enter URLs to remove (one at a time or bulk if available)",
+    "7. Select 'Remove this URL from Google Search results'",
+    "8. Click 'Request removal'",
+    ""
+  ],
+  "urls_to_remove": [
+    "https://github.com/ChaitanyaJoshi1769 (if indexed)",
+    "https://github.com/ChaitanyaJoshi1769/Privacy-data-removal-framework",
+    "[Other URLs if found in Google search]"
+  ],
+  "timeline": "7-10 days for removal from search results (can be extended via robots.txt)",
+  "notes": "Temporary removals last 6 months. For permanent removal, use robots.txt on your website."
+}

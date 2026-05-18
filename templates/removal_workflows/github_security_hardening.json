@@ -1,0 +1,49 @@
+{
+  "guide_id": "github_hardening_001",
+  "purpose": "Secure and harden GitHub account for privacy",
+  "current_profile": "ChaitanyaJoshi1769",
+  "audit_checklist": [
+    {
+      "item": "Profile Visibility",
+      "status": "needs_review",
+      "action": "https://github.com/settings/profile",
+      "details": "Check if profile is public. Consider making private if not needed for professional reasons."
+    },
+    {
+      "item": "Email Visibility",
+      "status": "needs_review",
+      "action": "https://github.com/settings/emails",
+      "details": "Keep email private. Uncheck 'Keep my email addresses private' option."
+    },
+    {
+      "item": "Repository Visibility",
+      "status": "needs_review",
+      "action": "Check each repository for public/private status",
+      "details": "Make sensitive repositories private. Review Privacy-data-removal-framework access level."
+    },
+    {
+      "item": "Commit History",
+      "status": "needs_action",
+      "action": "Review commits for sensitive data",
+      "details": "Check git history for exposed emails, API keys, or sensitive information."
+    },
+    {
+      "item": "Two-Factor Authentication",
+      "status": "recommended",
+      "action": "https://github.com/settings/security",
+      "details": "Enable 2FA for account security."
+    },
+    {
+      "item": "Active Sessions",
+      "status": "recommended",
+      "action": "https://github.com/settings/sessions",
+      "details": "Review and revoke any suspicious sessions."
+    },
+    {
+      "item": "SSH Keys",
+      "status": "recommended",
+      "action": "https://github.com/settings/keys",
+      "details": "Review SSH keys. Remove any old/unused keys."
+    }
+  ]
+}

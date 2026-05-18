@@ -1,0 +1,16 @@
+{
+  "platform": "Bing Webmaster Tools",
+  "purpose": "Remove URLs from Bing search index",
+  "steps": [
+    "1. Go to https://www.bing.com/webmasters/",
+    "2. Log in with Microsoft account",
+    "3. Add your website property",
+    "4. Go to 'Remove URL' or 'Crawl Control'",
+    "5. Click 'Remove URL'",
+    "6. Enter URLs you want removed",
+    "7. Select type of removal needed",
+    "8. Submit removal request"
+  ],
+  "timeline": "7-14 days for removal",
+  "notes": "Bing removal is less critical than Google but still important."
+}

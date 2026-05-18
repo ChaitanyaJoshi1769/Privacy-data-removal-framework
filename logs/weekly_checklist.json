@@ -1,0 +1,54 @@
+{
+  "week_1": {
+    "dates": "2026-05-18 to 2026-05-24",
+    "tasks": [
+      {
+        "task": "GitHub profile audit",
+        "time": "30 min",
+        "status": "pending"
+      },
+      {
+        "task": "Breach check (HIBP)",
+        "time": "10 min",
+        "status": "pending"
+      },
+      {
+        "task": "Data broker opt-outs (Spokeo-Intelius)",
+        "time": "6 hours",
+        "status": "pending"
+      },
+      {
+        "task": "Continue data brokers",
+        "time": "6 hours",
+        "status": "pending"
+      }
+    ],
+    "total_hours": 13
+  },
+  "week_2": {
+    "dates": "2026-05-25 to 2026-05-31",
+    "tasks": [
+      {
+        "task": "Finish data broker removals",
+        "time": "3 hours",
+        "status": "pending"
+      },
+      {
+        "task": "Google Search Console requests",
+        "time": "30 min",
+        "status": "pending"
+      },
+      {
+        "task": "Bing removal requests",
+        "time": "30 min",
+        "status": "pending"
+      },
+      {
+        "task": "Monitor broker responses",
+        "time": "2 hours",
+        "status": "pending"
+      }
+    ],
+    "total_hours": 6
+  }
+}

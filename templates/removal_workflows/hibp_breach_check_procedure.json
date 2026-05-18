@@ -1,0 +1,22 @@
+{
+  "check_id": "hibp_check_001",
+  "service": "Have I Been Pwned (HIBP)",
+  "url": "https://haveibeenpwned.com/",
+  "steps": [
+    "1. Go to https://haveibeenpwned.com/",
+    "2. Enter your email: chaitanyajoshi15@gmail.com",
+    "3. Check if email appears in any breaches",
+    "4. If breaches found:",
+    "   a. Note which services/breaches exposed your data",
+    "   b. Check if passwords were exposed",
+    "   c. Change passwords on those services immediately",
+    "5. Sign up for breach notifications",
+    "6. Enable 'Notify me' for future breaches with your email"
+  ],
+  "backup_checks": [
+    "Check AnnualCreditReport.com for credit reports",
+    "Place fraud alert with credit bureaus if breaches found",
+    "Monitor credit card statements for suspicious activity",
+    "Consider credit freeze with major bureaus (Equifax, Experian, TransUnion)"
+  ]
+}

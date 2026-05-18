@@ -1,0 +1,39 @@
+{
+  "service": "Internet Archive (Archive.org)",
+  "url": "https://archive.org/",
+  "removal_methods": [
+    {
+      "method": "Direct Request",
+      "steps": [
+        "1. Go to https://archive.org/about/exclude.php",
+        "2. Scroll down to 'Existing Policies'",
+        "3. Click 'request exclusion'",
+        "4. Fill out form with your URL",
+        "5. Archive.org will add robots.txt exclusion"
+      ],
+      "timeline": "Processing can take several weeks"
+    },
+    {
+      "method": "Robots.txt Exclusion",
+      "steps": [
+        "1. Add to your website's robots.txt:",
+        "   User-agent: ia_archiver",
+        "   Disallow: /",
+        "2. This prevents future crawling by Archive.org",
+        "3. Request removal of existing snapshots separately"
+      ],
+      "note": "Only works if you control the website"
+    },
+    {
+      "method": "Email Contact",
+      "steps": [
+        "1. Send email to info@archive.org",
+        "2. Subject: 'URL Removal Request'",
+        "3. Include full URL and removal reason",
+        "4. Archive.org will review and respond",
+        "5. May take 2-4 weeks"
+      ],
+      "note": "Use if direct form doesn't work"
+    }
+  ]
+}

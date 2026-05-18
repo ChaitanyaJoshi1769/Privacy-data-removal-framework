@@ -1,0 +1,76 @@
+{
+  "project_id": "privacy_remediation_001",
+  "subject": "Chaitanya Joshi",
+  "start_date": "2026-05-18",
+  "current_date": "2026-05-18T08:10:41.132256",
+  "phase_progress": {
+    "phase_0": {
+      "name": "Infrastructure Setup",
+      "status": "COMPLETE",
+      "completion": 100
+    },
+    "phase_1": {
+      "name": "Identity Intake",
+      "status": "COMPLETE",
+      "completion": 35
+    },
+    "phase_2": {
+      "name": "OSINT Discovery",
+      "status": "COMPLETE",
+      "completion": 100
+    },
+    "phase_3": {
+      "name": "Exposure Analysis",
+      "status": "COMPLETE",
+      "completion": 100
+    },
+    "phase_4": {
+      "name": "Removal Operations",
+      "status": "IN_PROGRESS",
+      "completion": 85
+    },
+    "phase_5": {
+      "name": "Search Suppression",
+      "status": "READY",
+      "completion": 75
+    },
+    "phase_6": {
+      "name": "Privacy Hardening",
+      "status": "READY",
+      "completion": 100
+    },
+    "phase_7": {
+      "name": "Continuous Monitoring",
+      "status": "READY",
+      "completion": 100
+    },
+    "phase_8": {
+      "name": "Full Orchestration",
+      "status": "READY",
+      "completion": 100
+    }
+  },
+  "removal_tracker": {
+    "github_audit": {
+      "status": "pending",
+      "priority": 1
+    },
+    "breach_check": {
+      "status": "pending",
+      "priority": 2
+    },
+    "data_brokers": {
+      "brokers": 9,
+      "status": "pending",
+      "priority": 3
+    },
+    "search_removal": {
+      "status": "pending",
+      "priority": 4
+    },
+    "archive_removal": {
+      "status": "pending",
+      "priority": 5
+    }
+  }
+}

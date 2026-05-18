@@ -1,0 +1,196 @@
+{
+  "template_id": "data_brokers_removal_001",
+  "generated": "2026-05-18T08:10:07.868770",
+  "purpose": "Complete removal workflow for 9 major data brokers",
+  "brokers": [
+    {
+      "rank": 1,
+      "name": "Spokeo.com",
+      "difficulty": "EASY",
+      "time_estimate": "10-15 minutes",
+      "steps": [
+        "1. Go to https://www.spokeo.com",
+        "2. Search for 'Chaitanya Joshi' or 'chaitanyajoshi15@gmail.com'",
+        "3. If profile found, click on it to view full details",
+        "4. Look for 'Remove this listing' or 'Privacy' option (usually at bottom)",
+        "5. Select removal reason: 'I am this person and want my info removed'",
+        "6. Verify email to confirm removal request",
+        "7. Note confirmation number and date",
+        "8. Verify removal after 5-7 business days"
+      ],
+      "verification": "Check again in 7 days - should no longer appear",
+      "notes": "Spokeo is most responsive to removal requests. Usually completes in 5-7 days."
+    },
+    {
+      "rank": 2,
+      "name": "WhitePages.com",
+      "difficulty": "EASY",
+      "time_estimate": "10-15 minutes",
+      "steps": [
+        "1. Go to https://www.whitepages.com",
+        "2. Search for your name and location",
+        "3. If found, click on your profile",
+        "4. Look for 'Remove this listing' or privacy menu",
+        "5. Select 'I am this person' option",
+        "6. Provide verification (email or phone)",
+        "7. Confirm removal request",
+        "8. Monitor for removal confirmation"
+      ],
+      "verification": "Check in 7-10 business days",
+      "notes": "WhitePages usually removes within 7-10 days. Very straightforward process."
+    },
+    {
+      "rank": 3,
+      "name": "Intelius.com",
+      "difficulty": "MEDIUM",
+      "time_estimate": "15-20 minutes",
+      "steps": [
+        "1. Go to https://www.intelius.com",
+        "2. Search for your name",
+        "3. If profile found, click to view",
+        "4. Look for removal or privacy link (may be small text at bottom)",
+        "5. Follow removal process - may require email verification",
+        "6. Provide reason for removal",
+        "7. Submit request and wait for confirmation email"
+      ],
+      "verification": "Check in 10-14 business days",
+      "notes": "Intelius removal process is less obvious. Look carefully for privacy/removal link."
+    },
+    {
+      "rank": 4,
+      "name": "MyLife.com",
+      "difficulty": "MEDIUM",
+      "time_estimate": "15-20 minutes",
+      "steps": [
+        "1. Go to https://www.mylife.com",
+        "2. Search for your name",
+        "3. If profile found, click 'Not me' or 'Remove' button",
+        "4. MyLife may ask you to verify (email or phone)",
+        "5. Complete verification process",
+        "6. Confirm removal request",
+        "7. Wait for processing"
+      ],
+      "verification": "Check in 10-15 business days",
+      "notes": "MyLife requires verification but removal is usually completed."
+    },
+    {
+      "rank": 5,
+      "name": "TrueCaller.com",
+      "difficulty": "MEDIUM",
+      "time_estimate": "15-20 minutes",
+      "steps": [
+        "1. Option A: Use TrueCaller app - Search yourself and select 'Not me'",
+        "2. Option B: Go to https://www.truecaller.com",
+        "3. Search for your name/phone",
+        "4. If found, flag as incorrect or request removal",
+        "5. Verify your email or phone",
+        "6. Submit removal request",
+        "7. Monitor for confirmation"
+      ],
+      "verification": "Check in 7-10 business days",
+      "notes": "TrueCaller removal is faster via app vs website."
+    },
+    {
+      "rank": 6,
+      "name": "PeopleFinder.com",
+      "difficulty": "HARD",
+      "time_estimate": "20-30 minutes",
+      "steps": [
+        "1. Go to https://www.peoplefinder.com",
+        "2. Search for your name",
+        "3. If found, look for removal/privacy option (may not be obvious)",
+        "4. May need to fill contact form: https://www.peoplefinder.com/removal",
+        "5. Provide your info for verification",
+        "6. Submit request via email to removal department",
+        "7. Wait for processing (can take 2-3 weeks)"
+      ],
+      "verification": "Check in 14-21 business days",
+      "notes": "PeopleFinder is less responsive. Email contact form may be fastest."
+    },
+    {
+      "rank": 7,
+      "name": "USSearch.com",
+      "difficulty": "HARD",
+      "time_estimate": "20-30 minutes",
+      "steps": [
+        "1. Go to https://www.ussearch.com",
+        "2. Search for your name",
+        "3. If found, look for 'Remove' or 'Opt-out' option",
+        "4. May require email or phone verification",
+        "5. Fill out removal form with personal info",
+        "6. Submit and wait for response",
+        "7. May need to follow up via email"
+      ],
+      "verification": "Check in 14-21 business days",
+      "notes": "USSearch removal can take time. Keep records of your removal request."
+    },
+    {
+      "rank": 8,
+      "name": "FamilyTreeNow.com",
+      "difficulty": "MEDIUM",
+      "time_estimate": "15-20 minutes",
+      "steps": [
+        "1. Go to https://www.familytreenow.com",
+        "2. Search for your name",
+        "3. If profile found, click on your entry",
+        "4. Look for 'Remove from site' option",
+        "5. Verify your identity (email)",
+        "6. Confirm removal request",
+        "7. Wait for processing (usually fast)"
+      ],
+      "verification": "Check in 7-10 business days",
+      "notes": "FamilyTreeNow is relatively straightforward. Usually removes quickly."
+    },
+    {
+      "rank": 9,
+      "name": "ZoomInfo.com",
+      "difficulty": "HARD",
+      "time_estimate": "20-30 minutes",
+      "steps": [
+        "1. Go to https://www.zoominfo.com",
+        "2. Search for your name and company (if applicable)",
+        "3. If found, look for edit/remove option",
+        "4. ZoomInfo often requires business verification",
+        "5. May need to use https://www.zoominfo.com/business/manage",
+        "6. Fill out removal/opt-out form",
+        "7. Submit and monitor for response",
+        "8. May require email verification or manual review"
+      ],
+      "verification": "Check in 14-21 business days",
+      "notes": "ZoomInfo is business-focused. Removal can take longer. Be patient."
+    }
+  ],
+  "removal_checklist": {
+    "pre_removal": [
+      "\u25a1 Document your current profile on each broker (take screenshot)",
+      "\u25a1 Create a tracking spreadsheet for all submissions",
+      "\u25a1 Note the date and time of each removal request",
+      "\u25a1 Save confirmation numbers/emails"
+    ],
+    "during_removal": [
+      "\u25a1 Follow the exact steps for each broker",
+      "\u25a1 Verify your identity when requested",
+      "\u25a1 Keep records of all interactions",
+      "\u25a1 Note any special instructions or requirements"
+    ],
+    "post_removal": [
+      "\u25a1 Check each broker 7-21 days later",
+      "\u25a1 Document successful removals",
+      "\u25a1 For failed removals, resubmit or escalate",
+      "\u25a1 Update tracking spreadsheet weekly"
+    ]
+  },
+  "tracking_template": {
+    "broker": "Spokeo",
+    "search_date": "2026-05-18",
+    "profile_found": true,
+    "removal_submitted": false,
+    "submission_date": null,
+    "confirmation_number": null,
+    "verification_method": "email",
+    "status": "pending",
+    "expected_completion": "2026-05-25",
+    "verified_removed": false,
+    "notes": ""
+  }
+}
