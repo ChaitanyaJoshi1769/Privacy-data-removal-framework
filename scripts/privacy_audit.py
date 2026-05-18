@@ -6,6 +6,7 @@ Audit current privacy settings
 
 import json
 from datetime import datetime
+from typing import Dict
 
 class PrivacyAudit:
     def __init__(self):

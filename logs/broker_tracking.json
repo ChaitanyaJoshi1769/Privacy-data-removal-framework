@@ -1,0 +1,200 @@
+{
+  "spokeo": {
+    "broker_id": "spokeo",
+    "broker_info": {
+      "name": "Spokeo",
+      "url": "https://www.spokeo.com",
+      "removal_url": "https://www.spokeo.com/optout",
+      "difficulty": "hard",
+      "time_estimate_days": 14,
+      "removal_method": "Manual opt-out form"
+    },
+    "status": "not_found",
+    "found": false,
+    "data_found": null,
+    "search_date": null,
+    "submission_date": null,
+    "confirmation_number": null,
+    "expected_removal": null,
+    "verified_removed": false,
+    "verification_date": null,
+    "notes": "",
+    "removal_attempts": 0
+  },
+  "whitepages": {
+    "broker_id": "whitepages",
+    "broker_info": {
+      "name": "White Pages",
+      "url": "https://www.whitepages.com",
+      "removal_url": "https://www.whitepages.com/suppression",
+      "difficulty": "medium",
+      "time_estimate_days": 14,
+      "removal_method": "Opt-out form with verification"
+    },
+    "status": "not_found",
+    "found": false,
+    "data_found": null,
+    "search_date": null,
+    "submission_date": null,
+    "confirmation_number": null,
+    "expected_removal": null,
+    "verified_removed": false,
+    "verification_date": null,
+    "notes": "",
+    "removal_attempts": 0
+  },
+  "intelius": {
+    "broker_id": "intelius",
+    "broker_info": {
+      "name": "Intelius",
+      "url": "https://www.intelius.com",
+      "removal_url": "https://www.intelius.com/optout",
+      "difficulty": "hard",
+      "time_estimate_days": 21,
+      "removal_method": "Phone verification required"
+    },
+    "status": "not_found",
+    "found": false,
+    "data_found": null,
+    "search_date": null,
+    "submission_date": null,
+    "confirmation_number": null,
+    "expected_removal": null,
+    "verified_removed": false,
+    "verification_date": null,
+    "notes": "",
+    "removal_attempts": 0
+  },
+  "mylife": {
+    "broker_id": "mylife",
+    "broker_info": {
+      "name": "MyLife",
+      "url": "https://www.mylife.com",
+      "removal_url": "https://www.mylife.com/privacy",
+      "difficulty": "medium",
+      "time_estimate_days": 30,
+      "removal_method": "Account registration + removal"
+    },
+    "status": "not_found",
+    "found": false,
+    "data_found": null,
+    "search_date": null,
+    "submission_date": null,
+    "confirmation_number": null,
+    "expected_removal": null,
+    "verified_removed": false,
+    "verification_date": null,
+    "notes": "",
+    "removal_attempts": 0
+  },
+  "truecaller": {
+    "broker_id": "truecaller",
+    "broker_info": {
+      "name": "TrueCaller",
+      "url": "https://www.truecaller.com",
+      "removal_url": "https://www.truecaller.com/unlist",
+      "difficulty": "easy",
+      "time_estimate_days": 7,
+      "removal_method": "In-app opt-out"
+    },
+    "status": "not_found",
+    "found": false,
+    "data_found": null,
+    "search_date": null,
+    "submission_date": null,
+    "confirmation_number": null,
+    "expected_removal": null,
+    "verified_removed": false,
+    "verification_date": null,
+    "notes": "",
+    "removal_attempts": 0
+  },
+  "peoplefinder": {
+    "broker_id": "peoplefinder",
+    "broker_info": {
+      "name": "PeopleFinder",
+      "url": "https://www.peoplefinder.com",
+      "removal_url": "https://www.peoplefinder.com/removal",
+      "difficulty": "medium",
+      "time_estimate_days": 14,
+      "removal_method": "Online removal form"
+    },
+    "status": "not_found",
+    "found": false,
+    "data_found": null,
+    "search_date": null,
+    "submission_date": null,
+    "confirmation_number": null,
+    "expected_removal": null,
+    "verified_removed": false,
+    "verification_date": null,
+    "notes": "",
+    "removal_attempts": 0
+  },
+  "ussearch": {
+    "broker_id": "ussearch",
+    "broker_info": {
+      "name": "US Search",
+      "url": "https://www.ussearch.com",
+      "removal_url": "https://www.ussearch.com/privacy",
+      "difficulty": "hard",
+      "time_estimate_days": 21,
+      "removal_method": "Manual verification process"
+    },
+    "status": "not_found",
+    "found": false,
+    "data_found": null,
+    "search_date": null,
+    "submission_date": null,
+    "confirmation_number": null,
+    "expected_removal": null,
+    "verified_removed": false,
+    "verification_date": null,
+    "notes": "",
+    "removal_attempts": 0
+  },
+  "familytreenow": {
+    "broker_id": "familytreenow",
+    "broker_info": {
+      "name": "FamilyTreeNow",
+      "url": "https://www.familytreenow.com",
+      "removal_url": "https://www.familytreenow.com/user/delete",
+      "difficulty": "medium",
+      "time_estimate_days": 30,
+      "removal_method": "Profile deletion (requires account)"
+    },
+    "status": "not_found",
+    "found": false,
+    "data_found": null,
+    "search_date": null,
+    "submission_date": null,
+    "confirmation_number": null,
+    "expected_removal": null,
+    "verified_removed": false,
+    "verification_date": null,
+    "notes": "",
+    "removal_attempts": 0
+  },
+  "zoominfo": {
+    "broker_id": "zoominfo",
+    "broker_info": {
+      "name": "ZoomInfo",
+      "url": "https://www.zoominfo.com",
+      "removal_url": "https://www.zoominfo.com/d/update-profile",
+      "difficulty": "medium",
+      "time_estimate_days": 14,
+      "removal_method": "Online opt-out form"
+    },
+    "status": "not_found",
+    "found": false,
+    "data_found": null,
+    "search_date": null,
+    "submission_date": null,
+    "confirmation_number": null,
+    "expected_removal": null,
+    "verified_removed": false,
+    "verification_date": null,
+    "notes": "",
+    "removal_attempts": 0
+  }
+}

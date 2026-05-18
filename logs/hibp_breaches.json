@@ -1,0 +1,12 @@
+[
+  {
+    "email": "chaitanyajoshi15@gmail.com",
+    "checked_at": "2026-05-18T14:24:32.397669",
+    "breached": false,
+    "breach_count": 0,
+    "breaches": [],
+    "risk_level": "GREEN",
+    "action_required": false,
+    "error": "API error: 401"
+  }
+]
