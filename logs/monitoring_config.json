@@ -1,0 +1,38 @@
+{
+  "email": "chaitanyajoshi15@gmail.com",
+  "name": "Chaitanya Prabhakar Joshi",
+  "setup_date": "2026-05-18T15:23:26.197835",
+  "google_alerts": [
+    {
+      "query": "chaitanyajoshi15@gmail.com",
+      "frequency": "daily"
+    },
+    {
+      "query": "Chaitanya Prabhakar Joshi",
+      "frequency": "daily"
+    }
+  ],
+  "breach_monitoring_services": [
+    {
+      "name": "Have I Been Pwned",
+      "url": "https://haveibeenpwned.com/"
+    },
+    {
+      "name": "Firefox Monitor",
+      "url": "https://monitor.firefox.com/"
+    },
+    {
+      "name": "Google Password Manager",
+      "url": "https://passwords.google.com/"
+    }
+  ],
+  "quarterly_checks": [
+    "Search Google for your name",
+    "Search Bing for your name",
+    "Check TrueCaller",
+    "Check WhitePages",
+    "Check MyLife",
+    "Check Spokeo",
+    "Verify breach databases"
+  ]
+}
