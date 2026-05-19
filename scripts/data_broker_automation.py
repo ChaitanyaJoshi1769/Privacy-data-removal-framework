@@ -5,10 +5,15 @@ Automates searches across major data brokers and tracks removal submissions
 """
 
 import json
+import logging
 from datetime import datetime, timedelta
 from typing import Dict, List, Optional
 from pathlib import Path
 from enum import Enum
+
+# Configure logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
 
 
 class BrokerStatus(str, Enum):
@@ -273,8 +278,12 @@ class DataBrokerAutomation:
             "total_brokers": len(self.BROKERS),
             "prioritization_method": prioritize_by,
             "phases": self._generate_phases(),
+            "total_estimated_days": sum(
+                b.get("time_estimate_days", 14)
+                for b in self.BROKERS.values()
+            ),
             "total_estimated_hours": sum(
-                (b.get("time_estimate_days", 14) / 24) + 1
+                (b.get("time_estimate_days", 14) * 24) + 1
                 for b in self.BROKERS.values()
             )
         }
@@ -291,7 +300,8 @@ class DataBrokerAutomation:
                 "broker": broker_id,
                 "name": broker_info["name"],
                 "removal_url": broker_info["removal_url"],
-                "time_estimate_hours": broker_info.get("time_estimate_days", 14) + 1,
+                "time_estimate_days": broker_info.get("time_estimate_days", 14),
+                "time_estimate_hours": (broker_info.get("time_estimate_days", 14) * 24) + 1,
                 "removal_method": broker_info.get("removal_method")
             }
 
@@ -390,25 +400,39 @@ class DataBrokerAutomation:
 
 
 if __name__ == "__main__":
+    import sys
+    import os
+
+    # Load identity from environment variables or config file
+    identity_name = os.getenv("REMOVAL_NAME", "User")
+    identity_email = os.getenv("REMOVAL_EMAIL", "user@example.com")
+
+    if identity_name == "User" or identity_email == "user@example.com":
+        logger.warning("Using default identity. Set REMOVAL_NAME and REMOVAL_EMAIL environment variables.")
+
     identity = {
-        "name": "Chaitanya Joshi",
-        "email": "chaitanyajoshi15@gmail.com"
+        "name": identity_name,
+        "email": identity_email
     }
 
-    automation = DataBrokerAutomation(identity)
+    try:
+        automation = DataBrokerAutomation(identity)
 
-    print("Generating removal plan...")
-    plan = automation.generate_removal_plan()
-    print(json.dumps(plan, indent=2))
+        logger.info(f"Generating removal plan for {identity['name']}...")
+        plan = automation.generate_removal_plan()
+        print(json.dumps(plan, indent=2))
 
-    print("\nSearching all brokers...")
-    search_results = automation.search_all_brokers()
-    print(json.dumps(search_results, indent=2))
+        logger.info("Searching all brokers...")
+        search_results = automation.search_all_brokers()
+        print(json.dumps(search_results, indent=2))
 
-    print("\nBroker summary:")
-    summary = automation.get_summary()
-    print(json.dumps(summary, indent=2))
+        logger.info("Generating broker summary...")
+        summary = automation.get_summary()
+        print(json.dumps(summary, indent=2))
 
-    automation.export_tracking()
-    automation.export_summary()
-    print("\n✓ Data exported")
+        automation.export_tracking()
+        automation.export_summary()
+        logger.info("✓ Data exported successfully")
+    except Exception as e:
+        logger.error(f"Error during automation: {str(e)}", exc_info=True)
+        sys.exit(1)
